@@ -1,0 +1,87 @@
+site_name: Yiges
+
+copyright: >
+  Copyright &copy; 2018 - 2022 Yiges.M.x. –
+  <a href="#__consent">Change cookie settings</a>
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: images/favicon.png
+  language: zh
+
+  features:
+    - navigation.instant # 懒惰加载
+    - navigation.tracking # 自动追踪
+    - navigation.tabs # 顶部标签栏
+    - navigation.tabs.sticky # 顶部标签栏固定
+    # - navigation.expand # 自动展开所有分类
+    - navigation.indexes # index.md
+    - toc.follow # toc
+    - navigation.top # 回到顶部
+
+    - header.autohide
+
+    #md头部选项：
+    # ---
+    # hide:
+    #   - navigation
+    #   - toc
+    # ---
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+  
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: cyan
+      accent: lime
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: cyan
+      accent: lime
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: cyan
+      accent: lime
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+plugins:
+  - search:
+      lang: ja
+  - tags
+
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/YigesMx
+    # - icon: fontawesome/brands/qq
+    #   link: https://github.com/YigesMx
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    #cookies:
+    #  analytics: Custom name
+    actions:
+      - accept
+      - manage
