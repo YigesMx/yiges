@@ -1,4 +1,5 @@
 site/
 .sync/
+logs/
 
 publish.py
