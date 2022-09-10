@@ -1,14 +1,17 @@
 site_name: Yiges
 
 copyright: >
-  Copyright &copy; 2018 - 2022 Yiges.M.x. –
+  Copyright &copy; 2018 - 2022 Yiges.M.x., all rights reserved. –
   <a href="#__consent">Change cookie settings</a>
+
+repo_url: https://github.com/YigesMx/yiges
 
 theme:
   name: material
   logo: assets/logo.png
   favicon: images/favicon.png
   language: zh
+  custom_dir: overrides
 
   features:
     - navigation.instant # 懒惰加载
@@ -22,12 +25,17 @@ theme:
 
     - header.autohide
 
+    # - announce.dismiss
+
     #md头部选项：
     # ---
     # hide:
     #   - navigation
     #   - toc
     # ---
+  
+  icon:
+    repo: fontawesome/brands/git-alt
 
   font:
     text: Roboto
@@ -63,11 +71,17 @@ theme:
 plugins:
   - search:
       lang: ja
-  - tags
+  - tags:
+      tags_file: tags.md
+  - git-revision-date-localized:
+      type: date
+      enable_creation_date: true
+      # fallback_to_build_date: true
 
 
 
 extra:
+  # generator: false
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/YigesMx
@@ -85,3 +99,55 @@ extra:
     actions:
       - accept
       - manage
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic:
+      mode: view
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      linenums: true
+      auto_title: true
+      linenums_style: pymdownx-inline
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - Home:
+    - Welcome: index.md
+    - Tags: tags.md
+  
