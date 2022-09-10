@@ -1,1 +1,4 @@
-./site/*
+site/
+.sync/
+
+publish.py

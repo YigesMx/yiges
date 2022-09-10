@@ -42,19 +42,11 @@ theme:
     code: Roboto Mono
   
   palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      primary: cyan
-      accent: lime
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       primary: cyan
       accent: lime
-      scheme: default 
+      scheme: slate
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -67,12 +59,21 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
+    
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: cyan
+      accent: lime
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
 
 plugins:
   - search:
       lang: ja
   - tags:
-      tags_file: tags.md
+      tags_file: info/tags.md
   - git-revision-date-localized:
       type: date
       enable_creation_date: true
@@ -146,12 +147,12 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-nav:
-  - Home:
-    - Welcome: index.md
-    - Tags: tags.md
+# nav:
+#   - Home:
+#     - Welcome: index.md
+#     - Tags: tags.md
   
 extra_javascript:
-  - javascripts/mathjax.js
+  # - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
