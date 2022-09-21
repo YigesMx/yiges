@@ -365,10 +365,8 @@ template {
   -webkit-tap-highlight-color: transparent;
 }
 body {
-  color: rgba(0, 0, 0, 0.87);
   font-size: 14px;
   font-family: Roboto, Noto, Helvetica, Arial, sans-serif;
-  background-color: #fff;
 }
 @media (min-width: 600px) {
   body {

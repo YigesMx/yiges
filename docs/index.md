@@ -8,7 +8,7 @@ hide:
 
 ## 关于本站
 
-这个站点的内容主要是我的一些折腾记录以及学习与资源的整理与分享，欢迎大家共同讨论，提出建议，一起分享。
+这个站点的主要内容是我的一些折腾记录以及学习与资源的整理与分享，欢迎大家共同讨论，提出建议，一起分享。
 
 ## 内容标签
 
@@ -32,3 +32,85 @@ hide:
 <!-- <div align="left">
     <img  src="https://github-readme-streak-stats.herokuapp.com/?user=YigesMx&theme=dark" />
 </div> -->
+
+<!-- | 123 | 123 | 123 |
+|---|---|---|
+| 123 | 123 | 123 |
+| 123 | 123 | [Send :fontawesome-solid-paper-plane:](https://www.yiges.site/%E5%88%86%E4%BA%AB/%E6%91%B8%E6%91%B8%E9%B1%BC/#_1){ .md-button .mdui-btn-raised .mdui-ripple } | -->
+
+<!-- 实践可用的mdui组件 -->
+
+<!-- <div class="mdui-divider"></div> -->
+
+<!-- （彩色）进度指示器 -->
+<!-- <div class="mdui-spinner"></div> -->
+<!-- <div class="mdui-spinner mdui-spinner-colorful"></div> -->
+
+<!-- 进度条 -->
+<!-- <div class="mdui-progress"><div class="mdui-progress-determinate" style="width: 30%;"></div></div> -->
+<!-- <div class="mdui-progress"><div class="mdui-progress-indeterminate"></div></div> -->
+
+<!-- 可扩展面板（背景颜色不可自适应） -->
+<!-- <div class="mdui-panel mdui-panel-gapless" mdui-panel>
+
+  <div class="mdui-panel-item">
+    <div class="mdui-panel-item-header">First</div>
+    <div class="mdui-panel-item-body">
+      <p>First content</p>
+      <p>First content</p>
+    </div>
+  </div>
+
+  <div class="mdui-panel-item">
+    <div class="mdui-panel-item-header">Second</div>
+    <div class="mdui-panel-item-body">
+      <p>Second content</p>
+      <p>Second content</p>
+    </div>
+  </div>
+
+  <div class="mdui-panel-item">
+    <div class="mdui-panel-item-header">Third</div>
+    <div class="mdui-panel-item-body">
+      <p>Third content</p>
+      <p>Third content</p>
+    </div>
+  </div>
+
+</div> -->
+
+<!-- 卡片（背景颜色不可自适应） -->
+<!-- <div class="mdui-card">
+  <div class="mdui-card-media">
+    <img src="https://i.imgur.com/L1D5IZW.jpeg"/>
+    <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+      <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title">Title</div>
+        <div class="mdui-card-primary-subtitle">Subtitle</div>
+      </div>
+    </div>
+  </div>
+  <div class="mdui-card-actions">
+    <button class="mdui-btn mdui-ripple">action 1</button>
+    <button class="mdui-btn mdui-ripple">action 2</button>
+  </div>
+</div> -->
+
+<!-- 等分网格 -->
+<!-- <div class="mdui-container-fluid">
+    <div class="mdui-row">
+    <div class="mdui-col-xs-3">.mdui-col-xs-3</div>
+    </div>
+    <div class="mdui-row">
+    <div class="mdui-col-xs-6">.mdui-col-xs-6</div>
+    </div>
+    <div class="mdui-row">
+    <div class="mdui-col-xs-9">.mdui-col-xs-9</div>
+    </div>
+    <div class="mdui-row">
+    <div class="mdui-col-xs-12">.mdui-col-xs-12</div>
+    </div>
+</div> -->
+
+<!-- tooltips -->
+<!-- [Send :fontawesome-solid-paper-plane:](https://www.yiges.site/%E5%88%86%E4%BA%AB/%E6%91%B8%E6%91%B8%E9%B1%BC/#_1){ .md-button .mdui-btn-raised .mdui-ripple mdui-tooltip="\{content: '打印', position: 'top'\}" } -->
