@@ -5,18 +5,20 @@ hide:
 
 # 主页
 
+<div style="width:100%;text-align: center;">
+<canvas id=c style="margin:0 auto;max-width:500px;max-height:500px;border-radius: 10px;" class="mdui-shadow-5 mdui-hoverable"></canvas>
+</div>
+
 
 ## 关于本站
 
-这个站点的主要内容是我的一些折腾记录以及学习与资源的整理与分享，欢迎大家共同讨论，提出建议，一起分享。
+这个站点的主要内容是我个人整理的一些内容和资源的分享，欢迎大家共同讨论，提出建议，一起交流。
 
 ## 内容标签
 
 [TAGS]
 
 ## 关于我
-
-
 
 
 
