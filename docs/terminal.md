@@ -1,3 +1,8 @@
+---
+hide:
+    - navigation
+    - toc
+---
 # 终端机 - Terminal
 
 > ~~其实是仪表盘面板~~

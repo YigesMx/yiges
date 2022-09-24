@@ -14,7 +14,7 @@ theme:
   custom_dir: overrides
 
   features:
-    - navigation.instant # 懒惰加载
+    # - navigation.instant # 懒惰加载
     - navigation.tracking # 自动追踪
     - navigation.tabs # 顶部标签栏
     - navigation.tabs.sticky # 顶部标签栏固定
@@ -145,7 +145,7 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - assets/js/mdui.js
-  - assets/js/mind.js
+  # - assets/js/mind.js
 
 extra_css:
   - assets/css/mdui.css
@@ -155,9 +155,15 @@ nav:
   - 终端机: terminal.md
   - 智域:
     - Domain/index.md
-    - Ark: Domain/Ark/index.md
+    - Ark:
+      - Domain/Ark/index.md
+      - CS:
+        - 关于链接: Domain/Ark/CS/2022-09-25-different-links.md
     - Halo: Domain/Halo/index.md
-  - 致远: Reach/index.md
+  - 致远:
+    - Reach/index.md
+    - 折腾实录:
+      - canves-nest.js: Reach/折腾实录/2022-09-25-canves-nest-js.md
   - 丰饶: Harvest/index.md
   - 滑流空间: slipspace.md
   

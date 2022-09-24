@@ -5,9 +5,12 @@ hide:
 
 # 索引器 - Index
 
-<div class="mdui-ripple" style="border-radius: 10px;max-width:500px;margin:0 auto;">
+<div id="cnest" style="width:100vw;height:100vh;position:fixed;top:0;left:0;"></div>
+<script type="text/javascript" color="180,180,180" opacity="0.9" zIndex="-2" count="99" src="assets/js/canvas-nest.js"></script>
+
+<!-- <div class="mdui-ripple" style="border-radius: 10px;max-width:500px;margin:0 auto;">
 <canvas id=c class="mdui-shadow-5 mdui-hoverable" style="margin:0 auto;height:inherit;border-radius: 10px;max-width:500px;"></canvas>
-</div>
+</div> -->
 
 
 ## 关于本站
@@ -31,6 +34,10 @@ hide:
 {style="text-align:center;"}
 
 > ~~懂得都懂，分类小标题都出自黑楼，本人剧情/设定向，感兴趣的可以交流（~~
+
+
+<!-- 延迟加载 -->
+<!-- <script defer src="example2.js"></script> -->
 
 <!-- chip -->
 <!-- <div class="mdui-chip" style="background-color:#43506a!important;">
