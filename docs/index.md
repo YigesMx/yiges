@@ -3,10 +3,10 @@ hide:
     - navigation
 ---
 
-# 主页
+# 索引器 - Index
 
-<div style="width:100%;text-align: center;">
-<canvas id=c style="margin:0 auto;max-width:500px;max-height:500px;border-radius: 10px;" class="mdui-shadow-5 mdui-hoverable"></canvas>
+<div class="mdui-ripple" style="border-radius: 10px;max-width:500px;margin:0 auto;">
+<canvas id=c class="mdui-shadow-5 mdui-hoverable" style="margin:0 auto;height:inherit;border-radius: 10px;max-width:500px;"></canvas>
 </div>
 
 
@@ -21,15 +21,24 @@ hide:
 ## 关于我
 
 
-
 - :vulcan:  &ensp; Yiges.M.x.
 - :school:  &ensp; BUAA IAI
 - :rose: &ensp; Sirius
 - :simple-github: &ensp; [GitHub](https://www.github.com/YigesMx)
 
 
-
 ![Metrics](https://metrics.lecoq.io/YigesMx?template=classic&isocalendar=1&discussions=1&introduction=1&people=1&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=false&base.skip=false&isocalendar=false&isocalendar.duration=half-year&people=false&people.limit=24&people.identicons=false&people.identicons.hide=false&people.size=28&people.types=followers%2C%20following&people.shuffle=false&introduction=false&introduction.title=true&discussions=false&discussions.categories=true&discussions.categories.limit=0&config.timezone=Asia%2FShanghai)
+{style="text-align:center;"}
+
+> ~~懂得都懂，分类小标题都出自黑楼，本人剧情/设定向，感兴趣的可以交流（~~
+
+<!-- chip -->
+<!-- <div class="mdui-chip" style="background-color:#43506a!important;">
+  <span class="mdui-chip-icon mdui-color-cyan">
+    <i class="mdui-icon material-icons">face</i>
+  </span>
+  <span class="mdui-chip-title" style="color:#fff!important;">Example Chip</span>
+</div> -->
 
 <!-- <div align="left">
     <img  src="https://github-readme-streak-stats.herokuapp.com/?user=YigesMx&theme=dark" />
