@@ -5,13 +5,12 @@ hide:
 
 # 索引器 - Index
 
-<div id="cnest" style="width:100vw;height:100vh;position:fixed;top:0;left:0;"></div>
+<div id="cnest" style="width:100vw;height:100vh;position:fixed;top:0;left:0;z-index: -2;"></div>
 <script type="text/javascript" color="180,180,180" opacity="0.9" zIndex="-2" count="99" src="assets/js/canvas-nest.js"></script>
 
 <!-- <div class="mdui-ripple" style="border-radius: 10px;max-width:500px;margin:0 auto;">
 <canvas id=c class="mdui-shadow-5 mdui-hoverable" style="margin:0 auto;height:inherit;border-radius: 10px;max-width:500px;"></canvas>
 </div> -->
-
 
 ## 关于本站
 

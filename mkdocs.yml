@@ -159,6 +159,7 @@ nav:
       - Domain/Ark/index.md
       - CS:
         - 关于链接: Domain/Ark/CS/2022-09-25-different-links.md
+        - 关于Git: Domain/Ark/CS/2022-09-26-git.md
     - Halo: Domain/Halo/index.md
   - 致远:
     - Reach/index.md
