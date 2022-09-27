@@ -12,6 +12,9 @@ hide:
 <canvas id=c class="mdui-shadow-5 mdui-hoverable" style="margin:0 auto;height:inherit;border-radius: 10px;max-width:500px;"></canvas>
 </div> -->
 
+[![Hello, world!](https://readme-typing-svg.herokuapp.com?font=Roboto+Mono&size=22&pause=1000&color=00BDD6&center=true&vCenter=true&width=600&lines=std%3A%3Acout+%3C%3C+%22Hello%2C+world!%22+%3C%3C+std%3A%3Aendl;printf(%22Hello%2C+world!%22);console.log(%22Hello%2C+world!%22))](#)
+{style="text-align:center;"}
+
 ## 关于本站
 
 这个站点的主要内容是我个人整理的一些内容和资源的分享，欢迎大家共同讨论，提出建议，一起交流。
@@ -22,15 +25,32 @@ hide:
 
 ## 关于我
 
+### 基本信息
 
-- :vulcan:  &ensp; Yiges.M.x.
-- :school:  &ensp; BUAA IAI
-- :rose: &ensp; Sirius
-- :simple-github: &ensp; [GitHub](https://www.github.com/YigesMx)
+&emsp;&emsp;:vulcan:  &ensp; 大家好，我是 Yiges.M.x.
 
+&emsp;&emsp;:school:  &ensp; 目前就读于 BUAA IAI 信息与计算科学（人工智能方向）专业
 
-![Metrics](https://metrics.lecoq.io/YigesMx?template=classic&isocalendar=1&discussions=1&introduction=1&people=1&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=false&base.skip=false&isocalendar=false&isocalendar.duration=half-year&people=false&people.limit=24&people.identicons=false&people.identicons.hide=false&people.size=28&people.types=followers%2C%20following&people.shuffle=false&introduction=false&introduction.title=true&discussions=false&discussions.categories=true&discussions.categories.limit=0&config.timezone=Asia%2FShanghai)
+&emsp;&emsp;:rose: &ensp; Sirius :fontawesome-solid-rainbow:
+
+### 平台
+
+[![GitHub](https://img.shields.io/github/followers/YigesMx?label=GitHub&style=social)](https://github.com/YigesMx){mdui-tooltip="\{content: 'GitHub', position: 'top'\}"  style="margin: 0 8px;"} 
+[![Website](https://img.shields.io/badge/yiges.site-%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-green?style=social&logo=markdown)](#){mdui-tooltip="\{content: '此网站', position: 'top'\}"  style="margin: 0 8px;"}
+[![WeChat](https://img.shields.io/badge/WeChat-%E5%BE%AE%E4%BF%A1-brightgreen?style=social&logo=wechat)](#){mdui-tooltip="\{content: 'MAX+?', position: 'top'\}" style="margin: 0 8px;"}
+[![QQ](https://img.shields.io/badge/-QQ-yellow?style=social&logo=tencent-qq&logoColor=black)](#){mdui-tooltip="\{content: '1261161911', position: 'top'\}"  style="margin: 0 8px;"}
+[![Bilibili](https://img.shields.io/badge/bilibili-B%E7%AB%99-blue?style=social&logo=bilibili)](https://space.bilibili.com/83527634){mdui-tooltip="\{content: 'bilibili', position: 'top'\}"  style="margin: 0 8px;"}
 {style="text-align:center;"}
+
+### Roadmap
+
+| :fontawesome-solid-layer-group: Class | :material-stairs-up: Working On | :material-list-box: TODO |
+| -------- | ----| ----- |
+| :fontawesome-solid-circle-dot: **主要** | ![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white) ![Python](https://img.shields.io/badge/Python-14354C?style=flat&logo=python&logoColor=white) ![Algorithms](https://img.shields.io/badge/The_Algorithms-00BCB4?style=flat&logo=the-algorithms&logoColor=white) | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=oracle&logoColor=white) |
+| :fontawesome-regular-circle-dot: **次要** | ![Latex](https://img.shields.io/badge/Latex-008080?style=flat&logo=Latex&logoColor=white)![Markdown](https://img.shields.io/badge/Markdown-000000?style=flat&logo=markdown&logoColor=white)| ![SQL](https://img.shields.io/badge/SQL-07405E?style=flat&logo=sqlite&logoColor=whit) |
+| :fontawesome-regular-circle: **了解** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white) ![SHELL](https://img.shields.io/badge/Shell_Script-121011?style=flat&logo=gnu-bash&logoColor=white) | ![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white) ![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=flat&logo=vue.js&logoColor=4FC08D) | 
+| :fontawesome-solid-toolbox: **工具** | ![windows](https://img.shields.io/badge/Windows-0078D4?style=flat&logo=windows-11&logoColor=white) ![ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white) ![macos](https://img.shields.io/badge/macos-000000?style=flat&logo=macos&logoColor=white) / ![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=flat&logo=visual-studio-code&logoColor=white) ![PyCharm](https://img.shields.io/badge/PyCharm-000000?style=flat&logo=pycharm&logoColor=white) / ![Edge](https://img.shields.io/badge/Edge-0078D7?style=flat&logo=microsoft-edge&logoColor=white) ![Chrome](https://img.shields.io/badge/Chrome-4285F4?style=flat&logo=google-chrome&logoColor=white) / ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)| |
+
 
 > ~~懂得都懂，分类小标题都出自黑楼，本人剧情/设定向，感兴趣的可以交流（~~
 
