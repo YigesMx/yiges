@@ -12,16 +12,27 @@ hide:
 <canvas id=c class="mdui-shadow-5 mdui-hoverable" style="margin:0 auto;height:inherit;border-radius: 10px;max-width:500px;"></canvas>
 </div> -->
 
-[![Hello, world!](https://readme-typing-svg.herokuapp.com?font=Roboto+Mono&size=22&pause=1000&color=00BDD6&center=true&vCenter=true&width=600&lines=std%3A%3Acout+%3C%3C+%22Hello%2C+world!%22+%3C%3C+std%3A%3Aendl;printf(%22Hello%2C+world!%22);console.log(%22Hello%2C+world!%22))](#)
+![Hello, world!](/assets/hello-world.svg)
 {style="text-align:center;"}
 
 ## 关于本站
 
 这个站点的主要内容是我个人整理的一些内容和资源的分享，欢迎大家共同讨论，提出建议，一起交流。
 
-## 内容标签
 
-[TAGS]
+### 搭建
+
+![ubuntu](https://img.shields.io/badge/System-Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white)
+![nginx](https://img.shields.io/badge/Server-Nginx-009639?style=flat&logo=nginx&logoColor=white)
+![python](https://img.shields.io/badge/Backend-Python-3776AB?style=flat&logo=python&logoColor=white)
+![mkdocs](https://img.shields.io/badge/Generator-MkDocs-54b4eb?style=flat)
+![material for mkdocs](https://img.shields.io/badge/Theme-Material_for_MkDocs-4051b5?style=flat)
+{style="text-align:center;"}
+
+### Repo
+
+![stars](https://img.shields.io/github/stars/YigesMx/yiges?color=ffee00&label=Github%20Repo%20Stars&logo=github&logoColor=ffffff)
+{style="text-align:center;"}
 
 ## 关于我
 
@@ -49,8 +60,11 @@ hide:
 | :fontawesome-solid-circle-dot: **主要** | ![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white) ![Python](https://img.shields.io/badge/Python-14354C?style=flat&logo=python&logoColor=white) ![Algorithms](https://img.shields.io/badge/The_Algorithms-00BCB4?style=flat&logo=the-algorithms&logoColor=white) | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=oracle&logoColor=white) |
 | :fontawesome-regular-circle-dot: **次要** | ![Latex](https://img.shields.io/badge/Latex-008080?style=flat&logo=Latex&logoColor=white)![Markdown](https://img.shields.io/badge/Markdown-000000?style=flat&logo=markdown&logoColor=white)| ![SQL](https://img.shields.io/badge/SQL-07405E?style=flat&logo=sqlite&logoColor=whit) |
 | :fontawesome-regular-circle: **了解** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white) ![SHELL](https://img.shields.io/badge/Shell_Script-121011?style=flat&logo=gnu-bash&logoColor=white) | ![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white) ![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=flat&logo=vue.js&logoColor=4FC08D) | 
-| :fontawesome-solid-toolbox: **工具** | ![windows](https://img.shields.io/badge/Windows-0078D4?style=flat&logo=windows-11&logoColor=white) ![ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white) ![macos](https://img.shields.io/badge/macos-000000?style=flat&logo=macos&logoColor=white) / ![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=flat&logo=visual-studio-code&logoColor=white) ![PyCharm](https://img.shields.io/badge/PyCharm-000000?style=flat&logo=pycharm&logoColor=white) / ![Edge](https://img.shields.io/badge/Edge-0078D7?style=flat&logo=microsoft-edge&logoColor=white) ![Chrome](https://img.shields.io/badge/Chrome-4285F4?style=flat&logo=google-chrome&logoColor=white) / ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)| |
+| :fontawesome-solid-toolbox: **工具** | ![windows](https://img.shields.io/badge/Windows-0078D4?style=flat&logo=windows-11&logoColor=white) ![ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white) ![macos](https://img.shields.io/badge/macOS-000000?style=flat&logo=macos&logoColor=white) /<br/> ![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=flat&logo=visual-studio-code&logoColor=white) ![VS](https://img.shields.io/badge/VS-5C2D91?style=flat&logo=visual-studio&logoColor=white)  ![PyCharm](https://img.shields.io/badge/PyCharm-000000?style=flat&logo=pycharm&logoColor=white) ![CLion](https://img.shields.io/badge/CLion-000000?style=flat&logo=clion&logoColor=white)/<br/> ![Edge](https://img.shields.io/badge/Edge-0078D7?style=flat&logo=microsoft-edge&logoColor=white) ![Chrome](https://img.shields.io/badge/Chrome-4285F4?style=flat&logo=google-chrome&logoColor=white) /<br/> ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)| |
 
+## 内容标签
+
+[TAGS]
 
 > ~~懂得都懂，分类小标题都出自黑楼，本人剧情/设定向，感兴趣的可以交流（~~
 
