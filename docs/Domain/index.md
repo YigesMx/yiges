@@ -1,3 +1,3 @@
-# 智域 - Domain
+# 智域 - Domain {: style="text-align:center;"}
 
 > ~~其实是知识分享区~~

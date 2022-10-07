@@ -43,7 +43,7 @@
 ### 修改`canves-nest.js`以将作用元素修改为该块
 
 找到这里（末尾）并作出修改：
-```js
+```js hl_lines="1"
 (document.getElementById("cnest")/*changed here*/, (f = document.getElementsByTagName("script"), {
     zIndex: (y = f[f.length - 1]).getAttribute("zIndex"),
     opacity: y.getAttribute("opacity"),

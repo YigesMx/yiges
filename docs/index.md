@@ -1,12 +1,13 @@
 ---
 hide:
     - navigation
+    - toc
 ---
 
-# 索引器 - Index
+# 索引器 - Index {: style="text-align:center;"}
 
 <div id="cnest" style="width:100vw;height:100vh;position:fixed;top:0;left:0;z-index: -2;"></div>
-<script type="text/javascript" color="180,180,180" opacity="0.9" zIndex="-2" count="99" src="/assets/js/canvas-nest.js"></script>
+<script type="text/javascript" color="180,180,180" opacity="0.9" zIndex="0" count="99" src="/assets/js/canvas-nest.js"></script>
 
 <!-- <div class="mdui-ripple" style="border-radius: 10px;max-width:500px;margin:0 auto;">
 <canvas id=c class="mdui-shadow-5 mdui-hoverable" style="margin:0 auto;height:inherit;border-radius: 10px;max-width:500px;"></canvas>
@@ -15,12 +16,13 @@ hide:
 ![Hello, world!](/assets/hello-world.svg)
 {style="text-align:center;"}
 
-## 关于本站
+## 关于本站 {: style="text-align:center;"}
 
 这个站点的主要内容是我个人整理的一些内容和资源的分享，欢迎大家共同讨论，提出建议，一起交流。
+{: style="text-align:center;"}
 
 
-### 搭建
+### Fundament {: style="text-align:center;"}
 
 ![ubuntu](https://img.shields.io/badge/System-Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white)
 ![nginx](https://img.shields.io/badge/Server-Nginx-009639?style=flat&logo=nginx&logoColor=white)
@@ -29,20 +31,17 @@ hide:
 ![material for mkdocs](https://img.shields.io/badge/Theme-Material_for_MkDocs-4051b5?style=flat)
 {style="text-align:center;"}
 
-### Repo
-
 ![stars](https://img.shields.io/github/stars/YigesMx/yiges?color=ffee00&label=Github%20Repo%20Stars&logo=github&logoColor=ffffff)
+![stars](https://img.shields.io/github/repo-size/YigesMx/yiges)
 {style="text-align:center;"}
 
 ## 关于我
 
 ### 基本信息
 
-&emsp;&emsp;:vulcan:  &ensp; 大家好，我是 Yiges.M.x.
-
-&emsp;&emsp;:school:  &ensp; 目前就读于 BUAA IAI 信息与计算科学（人工智能方向）专业
-
-&emsp;&emsp;:rose: &ensp; Sirius :fontawesome-solid-rainbow:
+&emsp;&emsp;:vulcan:  &ensp; 大家好，我是 Yiges.M.x.  
+&emsp;&emsp;:school:  &ensp; 目前就读于 BUAA IAI 信息与计算科学（人工智能方向）专业  
+&emsp;&emsp;:rose: &ensp; Sirius :fontawesome-solid-rainbow:  
 
 ### 平台
 
@@ -51,9 +50,9 @@ hide:
 [![WeChat](https://img.shields.io/badge/WeChat-%E5%BE%AE%E4%BF%A1-brightgreen?style=social&logo=wechat)](#){mdui-tooltip="\{content: 'MAX+?', position: 'top'\}" style="margin: 0 8px;"}
 [![QQ](https://img.shields.io/badge/-QQ-yellow?style=social&logo=tencent-qq&logoColor=black)](#){mdui-tooltip="\{content: '1261161911', position: 'top'\}"  style="margin: 0 8px;"}
 [![Bilibili](https://img.shields.io/badge/bilibili-B%E7%AB%99-blue?style=social&logo=bilibili)](https://space.bilibili.com/83527634){mdui-tooltip="\{content: 'bilibili', position: 'top'\}"  style="margin: 0 8px;"}
-{style="text-align:center;"}
 
 ### Roadmap
+
 
 | :fontawesome-solid-layer-group: Class | :material-stairs-up: Working On | :material-list-box: TODO |
 | -------- | ----| ----- |

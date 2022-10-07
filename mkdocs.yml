@@ -165,6 +165,16 @@ nav:
     - Reach/index.md
     - 折腾实录:
       - canves-nest.js: Reach/折腾实录/2022-09-25-canves-nest-js.md
-  - 丰饶: Harvest/index.md
+      - Web-Server-Building: Reach/折腾实录/2022-10-07-web-server-building.md
+  - 丰饶:
+    - Harvest/index.md
+    - 影音资源:
+      - 常用资源站: Harvest/影音/常用资源站.md
+      - 相关工具: Harvest/影音/相关工具.md
+      - 影评及回顾:
+        - Harvest/影音/review/index.md
+        - 2022-0910-LOTR-TROP: Harvest/影音/review/2022-0910-LOTR-TROP.md
+    - 工具:
+      - Harvest/工具/index.md
   - 滑流空间: slipspace.md
   
