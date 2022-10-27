@@ -1,5 +1,4 @@
 ---
-template: comments.html
 hide:
     - navigation
     - toc

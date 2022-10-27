@@ -160,12 +160,13 @@ nav:
       - CS:
         - 关于链接: Domain/Ark/CS/2022-09-25-different-links.md
         - 关于Git: Domain/Ark/CS/2022-09-26-git.md
+        - Web-Server-Building: Domain/Ark/CS/2022-10-07-web-server-building.md
     - Halo: Domain/Halo/index.md
   - 致远:
     - Reach/index.md
     - 折腾实录:
       - canves-nest.js: Reach/折腾实录/2022-09-25-canves-nest-js.md
-      - Web-Server-Building: Reach/折腾实录/2022-10-07-web-server-building.md
+      - Listary与Edge书签导出: Reach/折腾实录/2022-10-27-Listary-and-fav-export.md
   - 丰饶:
     - Harvest/index.md
     - 影音资源:

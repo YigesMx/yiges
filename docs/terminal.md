@@ -1,8 +1,10 @@
 ---
+template: nocomments.html
 hide:
     - navigation
     - toc
 ---
+
 # 终端机 - Terminal {: style="text-align:center;"}
 
 <div id="cnest" style="width:100vw;height:100vh;position:fixed;top:0;left:0;z-index: -2;"></div>

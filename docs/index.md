@@ -1,4 +1,5 @@
 ---
+template: nocomments.html
 hide:
     - navigation
     - toc
@@ -22,7 +23,7 @@ hide:
 {: style="text-align:center;"}
 
 
-### Fundament {: style="text-align:center;"}
+### Foundation {: style="text-align:center;"}
 
 ![ubuntu](https://img.shields.io/badge/System-Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white)
 ![nginx](https://img.shields.io/badge/Server-Nginx-009639?style=flat&logo=nginx&logoColor=white)
@@ -41,7 +42,6 @@ hide:
 
 &emsp;&emsp;:vulcan:  &ensp; 大家好，我是 Yiges.M.x.  
 &emsp;&emsp;:school:  &ensp; 目前就读于 BUAA IAI 信息与计算科学（人工智能方向）专业  
-&emsp;&emsp;:rose: &ensp; Sirius :fontawesome-solid-rainbow:  
 
 ### 平台
 
