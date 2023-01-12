@@ -5,7 +5,7 @@ hide:
     - toc
 ---
 
-# 索引器 - Index {: style="text-align:center;"}
+# 索引器 - Index
 
 <div id="cnest" style="width:100vw;height:100vh;position:fixed;top:0;left:0;z-index: -2;"></div>
 <script type="text/javascript" color="180,180,180" opacity="0.9" zIndex="0" count="99" src="/assets/js/canvas-nest.js"></script>
@@ -17,13 +17,13 @@ hide:
 ![Hello, world!](/assets/hello-world.svg)
 {style="text-align:center;"}
 
-## 关于本站 {: style="text-align:center;"}
+## 关于本站
 
 这个站点的主要内容是我个人整理的一些内容和资源的分享，欢迎大家共同讨论，提出建议，一起交流。
 {: style="text-align:center;"}
 
 
-### Foundation {: style="text-align:center;"}
+### Foundation
 
 ![ubuntu](https://img.shields.io/badge/System-Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white)
 ![nginx](https://img.shields.io/badge/Server-Nginx-009639?style=flat&logo=nginx&logoColor=white)
