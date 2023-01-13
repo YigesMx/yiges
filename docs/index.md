@@ -16,7 +16,7 @@ hide:
 ![Hello, world!](/assets/hello-world.svg)
 {style="text-align:center;"}
 
-## 关于本站 {style="text-align:center;"}
+## About {style="text-align:center;"}
 
 这个站点的主要内容是我个人整理的一些内容和资源的分享，欢迎大家共同讨论，提出建议，一起交流。
 {style="text-align:center;"}
@@ -34,14 +34,14 @@ hide:
 ![stars](https://img.shields.io/github/repo-size/YigesMx/yiges)
 {style="text-align:center;"}
 
-## 关于我
+## Me
 
-### 基本信息
+### Info
 
 &emsp;&emsp;:vulcan:  &ensp; 大家好，我是 Yiges.M.x.  
 &emsp;&emsp;:school:  &ensp; 目前就读于 BUAA IAI 信息与计算科学（人工智能方向）专业  
 
-### 平台
+### Platforms
 
 [![GitHub](https://img.shields.io/github/followers/YigesMx?label=GitHub&style=social)](https://github.com/YigesMx){mdui-tooltip="\{content: 'GitHub', position: 'top'\}"  style="margin: 0 8px;"} 
 [![Website](https://img.shields.io/badge/yiges.site-%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-green?style=social&logo=markdown)](#){mdui-tooltip="\{content: '此网站', position: 'top'\}"  style="margin: 0 8px;"}
@@ -59,7 +59,7 @@ hide:
 | :fontawesome-regular-circle: **了解** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white) ![SHELL](https://img.shields.io/badge/Shell_Script-121011?style=flat&logo=gnu-bash&logoColor=white) | ![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white) ![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=flat&logo=vue.js&logoColor=4FC08D) | 
 | :fontawesome-solid-toolbox: **工具** | ![windows](https://img.shields.io/badge/Windows-0078D4?style=flat&logo=windows-11&logoColor=white) ![ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white) ![macos](https://img.shields.io/badge/macOS-000000?style=flat&logo=macos&logoColor=white) /<br/> ![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=flat&logo=visual-studio-code&logoColor=white) ![VS](https://img.shields.io/badge/VS-5C2D91?style=flat&logo=visual-studio&logoColor=white)  ![PyCharm](https://img.shields.io/badge/PyCharm-000000?style=flat&logo=pycharm&logoColor=white) ![CLion](https://img.shields.io/badge/CLion-000000?style=flat&logo=clion&logoColor=white)/<br/> ![Edge](https://img.shields.io/badge/Edge-0078D7?style=flat&logo=microsoft-edge&logoColor=white) ![Chrome](https://img.shields.io/badge/Chrome-4285F4?style=flat&logo=google-chrome&logoColor=white) /<br/> ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)| |
 
-## 内容标签
+## Tags
 
 [TAGS]
 
