@@ -13,7 +13,7 @@ hide:
 <canvas id=c class="mdui-shadow-5 mdui-hoverable" style="margin:0 auto;height:inherit;border-radius: 10px;max-width:500px;"></canvas>
 </div> -->
 
-![Hello, world!](/assets/hello-world.svg)
+![Hello, world!](./assets/hello-world.svg)
 {style="text-align:center;"}
 
 ## About {style="text-align:center;"}
