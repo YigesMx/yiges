@@ -9,10 +9,6 @@ hide:
 <div id="cnest" style="width:100vw;height:100vh;position:fixed;top:0;left:0;z-index: -2;"></div>
 <script type="text/javascript" color="180,180,180" opacity="0.9" zIndex="0" count="99" src="/assets/js/canvas-nest.js"></script>
 
-<!-- <div class="mdui-ripple" style="border-radius: 10px;max-width:500px;margin:0 auto;">
-<canvas id=c class="mdui-shadow-5 mdui-hoverable" style="margin:0 auto;height:inherit;border-radius: 10px;max-width:500px;"></canvas>
-</div> -->
-
 ![Hello, world!](./assets/hello-world.svg)
 {style="text-align:center;"}
 
@@ -25,34 +21,36 @@ hide:
 
 ![ubuntu](https://img.shields.io/badge/System-Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white)
 ![nginx](https://img.shields.io/badge/Server-Nginx-009639?style=flat&logo=nginx&logoColor=white)
-![python](https://img.shields.io/badge/Backend-Python-3776AB?style=flat&logo=python&logoColor=white)
-![mkdocs](https://img.shields.io/badge/Generator-MkDocs-54b4eb?style=flat)
-![material for mkdocs](https://img.shields.io/badge/Theme-Material_for_MkDocs-4051b5?style=flat)
+![mkdocs](https://img.shields.io/badge/Generator-MkDocs-54b4eb?logo=markdown&style=flat)
+![material for mkdocs](https://img.shields.io/badge/Theme-Material_for_MkDocs-526CFE?style=flat&logo=MaterialForMkDocs&logoColor=white)
 {style="text-align:center;"}
 
-![stars](https://img.shields.io/github/stars/YigesMx/yiges?color=ffee00&label=Github%20Repo%20Stars&logo=github&logoColor=ffffff)
+![stars](https://img.shields.io/github/stars/YigesMx/yiges?color=ffee00&label=Github%20Repo%20Stars&logo=github&logoColor=000)
 ![stars](https://img.shields.io/github/repo-size/YigesMx/yiges)
 {style="text-align:center;"}
 
-## Me
+## About Me
 
 ### Info
 
 &emsp;&emsp;:vulcan:  &ensp; 大家好，我是 Yiges.M.x.  
-&emsp;&emsp;:school:  &ensp; 目前就读于 BUAA IAI 信息与计算科学（人工智能方向）专业  
+&emsp;&emsp;:school:  &ensp; 目前就读于 BUAA SAI(IAI) 信息与计算科学（人工智能方向）专业  
 
 ### Platforms
 
-[![GitHub](https://img.shields.io/github/followers/YigesMx?label=GitHub&style=social)](https://github.com/YigesMx){mdui-tooltip="\{content: 'GitHub', position: 'top'\}"  style="margin: 0 8px;"} 
-[![Website](https://img.shields.io/badge/yiges.site-%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-green?style=social&logo=markdown)](#){mdui-tooltip="\{content: '此网站', position: 'top'\}"  style="margin: 0 8px;"}
-[![WeChat](https://img.shields.io/badge/WeChat-%E5%BE%AE%E4%BF%A1-brightgreen?style=social&logo=wechat)](#){mdui-tooltip="\{content: 'MAX+?', position: 'top'\}" style="margin: 0 8px;"}
-[![QQ](https://img.shields.io/badge/-QQ-yellow?style=social&logo=tencent-qq&logoColor=black)](#){mdui-tooltip="\{content: '1261161911', position: 'top'\}"  style="margin: 0 8px;"}
-[![Bilibili](https://img.shields.io/badge/bilibili-B%E7%AB%99-blue?style=social&logo=bilibili)](https://space.bilibili.com/83527634){mdui-tooltip="\{content: 'bilibili', position: 'top'\}"  style="margin: 0 8px;"}
+<mdui-tooltip content="Plain tooltip">
+[![GitHub](https://img.shields.io/github/followers/YigesMx?label=GitHub&style=social){style="vertical-align: middle;"}](https://github.com/YigesMx){style="margin: 5px 8px;"} 
+</mdui-tooltip>
+<mdui-tooltip content="此网站">
+[![Website](https://img.shields.io/badge/yiges.site-%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-green?style=social&logo=markdown){style="vertical-align: middle;"}](#){style="margin: 5px 8px;"}
+</mdiu-tooltip>
+<mdui-tooltip content="Bilibili">
+[![Bilibili](https://img.shields.io/badge/bilibili-B%E7%AB%99-blue?style=social&logo=bilibili){style="vertical-align: middle;"}](https://space.bilibili.com/83527634){style="margin: 5px 8px;"}
+</mdui-tooltip>
 
 ### Stack
 
-
-| :fontawesome-solid-layer-group: Class | :material-stairs-up: Working On | :material-list-box: TODO |
+| :fontawesome-solid-layer-group: 类别 | :material-stairs-up: Working On | :material-list-box: TODO |
 | -------- | ----| ----- |
 | :fontawesome-solid-circle-dot: **主要** | ![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white) ![Python](https://img.shields.io/badge/Python-14354C?style=flat&logo=python&logoColor=white) ![Algorithms](https://img.shields.io/badge/The_Algorithms-00BCB4?style=flat&logo=the-algorithms&logoColor=white) <br/> ![Pytorch](https://img.shields.io/badge/pytorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)| ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=oracle&logoColor=white) |
 | :fontawesome-regular-circle-dot: **次要** | ![Latex](https://img.shields.io/badge/Latex-008080?style=flat&logo=Latex&logoColor=white)![Markdown](https://img.shields.io/badge/Markdown-000000?style=flat&logo=markdown&logoColor=white)| ![SQL](https://img.shields.io/badge/SQL-07405E?style=flat&logo=sqlite&logoColor=whit) |
@@ -62,8 +60,6 @@ hide:
 ## Tags
 
 [TAGS]
-
-> ~~懂得都懂，分类小标题都出自黑楼，本人剧情/设定向，感兴趣的可以交流（~~
 
 
 <!-- 延迟加载 -->

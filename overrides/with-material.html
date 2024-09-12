@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+
+{% block extrahead %}
+
+{{ super() }}
+
+<link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+<script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+<style>
+    html {
+        font-size: 20px!important;
+      }
+</style>
+<script>
+    mdui.setColorScheme('#55BAD3');
+
+    const update_mdui_theme = async (attr) => {
+
+        mdui.setColorScheme('#55BAD3');
+        
+        if (attr === '(prefers-color-scheme: light)') {
+            mdui.setTheme('light');
+        } else if (attr === '(prefers-color-scheme: dark)') {
+            mdui.setTheme('dark');
+        } else {
+            mdui.setTheme('auto');
+        }
+    }
+
+    // watch the body element's data-md-color-media attribute
+    document.addEventListener('DOMContentLoaded', function () {
+
+        const body = document.body;
+        
+        // update first loaded
+        const scheme = body.getAttribute('data-md-color-media');
+        update_mdui_theme(scheme);
+
+        const observer = new MutationObserver(function (mutations) {
+            console.log(mutations);
+            mutations.forEach(function (mutation) {
+                if (mutation.attributeName === 'data-md-color-media') {
+                    const scheme = body.getAttribute('data-md-color-media');
+                    
+                    update_mdui_theme(scheme);
+                }
+            });
+        });
+
+        observer.observe(body, {
+            attributes: true,
+            attributeFilter: ['data-md-color-media'],
+        });
+    });
+</script>
+{% endblock %}

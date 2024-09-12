@@ -1,7 +1,8 @@
 site_name: Yiges
+site_url: https://www.yiges.site
 
 copyright: >
-  Copyright &copy; 2018 - 2022 Yiges.M.x., all rights reserved. –
+  Copyright &copy; 2018 - NOW Yiges.M.x., all rights reserved. –
   <a href="#__consent">Change cookie settings</a>
 
 repo_url: https://github.com/YigesMx/yiges
@@ -42,6 +43,12 @@ theme:
     code: Roboto Mono
   
   palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       primary: cyan
@@ -58,13 +65,17 @@ theme:
       scheme: slate
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: Switch to system preference
+    
     
 
 
 plugins:
+  - social:
+      cards_layout_options:
+        font_family: Noto Sans SC
   - search:
-      lang: ja
+      lang: zh
   - tags:
       tags_file: index.md
   - git-revision-date-localized:
@@ -142,13 +153,15 @@ markdown_extensions:
 
 extra_javascript:
   # - javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  # - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - assets/js/mdui.js
-  # - assets/js/mind.js
+  # - assets/js/mdui.js
+  # - https://unpkg.com/mdui@2/mdui.global.js
+  # - assets/js/material.js
 
 extra_css:
-  - assets/css/mdui.css
+  # - assets/css/mdui.css
+  # - https://unpkg.com/mdui@2/mdui.css
 
 nav:
   - 索引器: index.md
