@@ -1,7 +1,4 @@
-.sync/
-logs/
 site/
+.cache/
 
 .user.ini
-
-www.yiges.site.code-workspace
