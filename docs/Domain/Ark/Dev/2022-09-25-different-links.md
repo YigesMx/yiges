@@ -1,3 +1,14 @@
+---
+title: "关于链接"
+description: "关于“链接”的一则简单介绍"
+
+tags:
+  - Linux
+  - Windows
+  - Link
+  - Dev
+---
+
 # 关于链接
 
 > 本文主要有关 Linux(Windows) 下 软连接/硬链接/(符号链接、快捷方式) 等的区别与用法：

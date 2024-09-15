@@ -1,48 +1,106 @@
+# ========== Site Information ==========
 site_name: Yiges
 site_url: https://www.yiges.site
+site_description: >
+  这个站点的主要是我个人整理的一些内容和资源分享，将来的 Projects 也会发布在这上面，欢迎大家共同讨论，提出建议，一起交流。
 
 copyright: >
   Copyright &copy; 2018 - NOW Yiges.M.x., all rights reserved. –
   <a href="#__consent">Change cookie settings</a>
 
 repo_url: https://github.com/YigesMx/yiges
+edit_uri: edit/main/docs/
 
+# ========== Navigation ==========
+nav:
+  - index.md
+  - terminal.md
+  - slingshot.md
+  - 智域:
+    - Domain/index.md
+    - Ark:
+      - Domain/Ark/index.md
+      - AI:
+        - Domain/Ark/AI/2024-02-03-ai-fundamentals.md
+        - Domain/Ark/AI/2024-05-01-introduction-to-transformer.md
+      - Dev:
+        - Domain/Ark/Dev/2022-09-25-different-links.md
+        - Domain/Ark/Dev/2022-09-26-git.md
+    - Halo:
+      - Domain/Halo/index.md
+  - 致远:
+    - Reach/index.md
+    - 折腾实录:
+      - Reach/折腾实录/2022-09-25-canves-nest-js.md
+      - Reach/折腾实录/2022-10-27-Listary-and-fav-export.md
+      - Reach/折腾实录/2024-09-11-deploy-searxng.md
+  - 丰饶:
+    - Harvest/index.md
+    - 工具和项目:
+      - Harvest/工具和项目/index.md
+    - 影音资源:
+      - Harvest/影音/常用资源站.md
+      - 影评及回顾:
+        - Harvest/影音/review/index.md
+        - Harvest/影音/review/2022-0910-LOTR-TROP.md
+  - slipspace.md
+
+# ========== Extra Loading & Process ==========
+
+extra_javascript:
+  # - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - assets/js/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+  # - assets/css/mdui.css
+
+watch:
+  - includes
+
+# ========== Theme Configuration & Plugins ==========
 theme:
   name: material
-  logo: assets/logo.png
-  favicon: assets/favicon.png
   language: zh
   custom_dir: overrides
 
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  icon: # about icons: https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/
+    repo: fontawesome/brands/git-alt
+  
+  font:
+    text: Roboto
+    code: Roboto Mono
+
   features:
-    # - navigation.instant # 懒惰加载
+    - navigation.instant # 单页应用模式，无刷新加载
+    - navigation.instant.progress # 加载进度条
+
     - navigation.tracking # 自动追踪
     - navigation.tabs # 顶部标签栏
     - navigation.tabs.sticky # 顶部标签栏固定
     # - navigation.expand # 自动展开所有分类
     - navigation.indexes # index.md
-    - toc.follow # toc
     - navigation.top # 回到顶部
+    - navigation.footer # 页脚导航
 
-    - header.autohide
+    - toc.follow # toc
 
-    # - announce.dismiss
+    - header.autohide # 自动隐藏标题栏
 
-    #md头部选项：
-    # ---
-    # hide:
-    #   - navigation
-    #   - toc
-    # ---
+    - search.suggest # 搜索建议
+    - search.highlight # 搜索高亮，点击后定位
+    - search.share # 搜索分享
+
+    - announce.dismiss # 公告栏关闭
+
+    - content.action.edit # 编辑按钮
+    - content.action.view # 查看源码按钮
   
-  icon:
-    repo: fontawesome/brands/git-alt
-
-  font:
-    text: Roboto
-    code: Roboto Mono
-  
-  palette:
+  palette: # 调色板
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
       toggle:
@@ -51,8 +109,8 @@ theme:
 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      primary: cyan
-      accent: teal
+      primary: teal
+      accent: cyan
       scheme: default
       toggle:
         icon: material/brightness-7
@@ -60,14 +118,12 @@ theme:
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
-      primary: cyan
-      accent: teal
+      primary: blue grey
+      accent: cyan
       scheme: slate
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
-    
-    
 
 
 plugins:
@@ -77,21 +133,28 @@ plugins:
   - search:
       lang: zh
   - tags:
-      tags_file: index.md
+      tags_file: slingshot.md
   - git-revision-date-localized:
       type: date
       enable_creation_date: true
-      # fallback_to_build_date: true
-
-
+      fallback_to_build_date: true
 
 extra:
-  # generator: false
-  social:
+  # generator: false # Made with Material for MkDocs notice
+  homepage: https://www.yiges.site
+  social:  # 页脚社交链接
     - icon: fontawesome/brands/github
       link: https://github.com/YigesMx
-    # - icon: fontawesome/brands/qq
-    #   link: https://github.com/YigesMx
+      name: GitHub
+    - icon: material/web
+      link: https://www.yiges.site
+      name: Homepage
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/83527634
+      name: Bilibili
+  analytics:
+    provider: google
+    property: G-J8WMV9GVD0
   consent:
     title: Cookie consent
     description: >- 
@@ -103,92 +166,97 @@ extra:
     #  analytics: Custom name
     actions:
       - accept
+      - reject
       - manage
 
-# Extensions
+# ========== Markdown Extensions ==========
 markdown_extensions:
-  - abbr
-  - admonition
-  - attr_list
-  - def_list
-  - footnotes
-  - md_in_html
-  - toc:
-      permalink: true
-  - tables
+
+  # === 基本文法增强 ===
+  # 跳过 \ 后的一切字符的转义
+  - pymdownx.escapeall:
+      nbsp: true # \空格转义为 &nbsp;
+      hardbreak: true # \换行转义为 <br>，可以可视地替代 Markdown 的两个空格换行
+  # 若#后无空格，则不会被识别为标题
+  - pymdownx.saneheaders
+  # 智能符号增强，(tm) (c) (r) -> ™ © ®, +/- --> <-- <--> =/= 1/4 1st 2nd
+  - pymdownx.smartsymbols
+  # 为数学公式渲染器 (MathJax/KaTeX) 提供支持，保留原始公式
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.critic:
-      mode: view
-  - pymdownx.details
+  # 表情
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.highlight:
-      linenums: true
-      auto_title: true
-      linenums_style: pymdownx-inline
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.magiclink:
-      repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
-  - pymdownx.mark
-  - pymdownx.smartsymbols
+  # 高级代码块
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
+  # 代码高亮，详见 https://squidfunk.github.io/mkdocs-material/reference/code-blocks/
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      linenums: true
+      auto_title: true
+      linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
+  # 强调优化
+  - pymdownx.betterem:
+      smart_enable: all
+  # 上标，使用 ^^xx^^ 显示插入的文本，使用 ^xxx^ 显示作为上标的文本
+  - pymdownx.caret
+  # 下标，使用 ~xx~ 显示删除的文本，使用 ~xxx~ 显示作为下标的文本
+  - pymdownx.tilde
+  # 自动链接，自动识别链接，另有特别多 shorthand，参考 https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: YigesMx
+      repo: yiges
+      provider: github
+
+
+  # === 高阶语法增强 ===
+  # GFW Checkbox List
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.tilde
+  # 键盘按键，++command+option+c++
+  - pymdownx.keys
+  # 缩写提示，文末加上 *[abbr]: Abbreviation
+  - abbr 
+  # 提示框，!!! note||info||warning||danger||success||... "Title" ，换行缩进Content ；可折叠则改为 ???+ ，+代表默认展开
+  - admonition 
+  - pymdownx.details
+  # 脚注，[^1]，文末加上 [^1]: 脚注内容
+  - footnotes 
+  # 表格
+  - tables
+  # 定义列表，: term : definition
+  - def_list
+  # 批改语法，{--删除--}，{++添加++}，{~~ 替换为 ~> xxx ~~}，{==高亮==}，{>>注释<<}
+  - pymdownx.critic:
+      mode: view
+  # 高亮标记，==highlight==
+  - pymdownx.mark
+  # mkdocs-material 扩展：Annotation， 含有 annotate 类的 block，使用 (1) 添加注释，在块后使用有序列表添加注释内容
+  # mkdocs-material 扩展：Grids，详见 https://squidfunk.github.io/mkdocs-material/reference/grids/
+  # mkdocs-material 扩展：Button，link 加上 .md-button 类
 
-extra_javascript:
-  # - javascripts/mathjax.js
-  # - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  # - assets/js/mdui.js
-  # - https://unpkg.com/mdui@2/mdui.global.js
-  # - assets/js/material.js
 
-extra_css:
-  # - assets/css/mdui.css
-  # - https://unpkg.com/mdui@2/mdui.css
+  # === 文档结构增强 ===
+  # 目录
+  - toc: 
+      permalink: true
+  # 片段，详见 https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
+  - pymdownx.snippets:
+      auto_append:
+        - includes/global_abbreviations.md
+  # 分栏，使用 === "TabName" 换行缩进+内容，来新建一个 Tab ，https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/
+  - pymdownx.tabbed:
+      alternate_style: true
 
-nav:
-  - 索引器: index.md
-  - 终端机: terminal.md
-  - 智域:
-    - Domain/index.md
-    - Ark:
-      - Domain/Ark/index.md
-      - CS:
-        - 关于链接: Domain/Ark/CS/2022-09-25-different-links.md
-        - 关于Git: Domain/Ark/CS/2022-09-26-git.md
-        - Web-Server-Building: Domain/Ark/CS/2022-10-07-web-server-building.md
-    - Halo: Domain/Halo/index.md
-  - 致远:
-    - Reach/index.md
-    - 折腾实录:
-      - canves-nest.js: Reach/折腾实录/2022-09-25-canves-nest-js.md
-      - Listary与Edge书签导出: Reach/折腾实录/2022-10-27-Listary-and-fav-export.md
-  - 丰饶:
-    - Harvest/index.md
-    - 影音资源:
-      - 常用资源站: Harvest/影音/常用资源站.md
-      - 相关工具: Harvest/影音/相关工具.md
-      - 影评及回顾:
-        - Harvest/影音/review/index.md
-        - 2022-0910-LOTR-TROP: Harvest/影音/review/2022-0910-LOTR-TROP.md
-    - 工具:
-      - Harvest/工具/index.md
-  - 滑流空间: slipspace.md
-  
+  # === HTML/CSS增强 ===
+  - attr_list # HTML属性列表，{#id .class key=value}
+  - md_in_html # 在HTML中使用Markdown，<div markdown="1"||markdown>...</div>

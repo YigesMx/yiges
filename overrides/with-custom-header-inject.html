@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
+{% block announce %}
+  <!-- Add announcement here, including arbitrary HTML -->
+    Yiges.site is back online!
+{% endblock %}
+
 
 {% block extrahead %}
 
@@ -7,12 +12,18 @@
 
 <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
 <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+
 <style>
-    html {
+    html { /*fix the scale influence of mdui*/
         font-size: 20px!important;
-      }
+    }
+    
+    .yiges-globe iframe { /*for globe's transparence*/
+        color-scheme: light !important;
+    }
 </style>
-<script>
+
+<script type="text/javascript">
     mdui.setColorScheme('#55BAD3');
 
     const update_mdui_theme = async (attr) => {
@@ -52,6 +63,33 @@
             attributes: true,
             attributeFilter: ['data-md-color-media'],
         });
+    });
+</script>
+
+<script type="module">
+    import {createCanvasNest} from '/assets/js/canvas-nest.js';
+    document.addEventListener('DOMContentLoaded', function () {
+        document$.subscribe(({ body }) => { 
+            createCanvasNest("cnest", {
+                zIndex: 0,
+                lineColor: "180,180,180",
+                lineOpacity: 0.8,
+                pointColor: "180,180,180",
+                pointOpacity: 0.9,
+                count: 75
+            });
+        })
+    });
+</script>
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        
+        document$.subscribe(({ body }) => { 
+            const globe = document.querySelector('.md-copyright__highlight');
+            // 将其中的 NOW 改为当前年份
+            globe.innerHTML = globe.innerHTML.replace('NOW', new Date().getFullYear());
+        })
     });
 </script>
 {% endblock %}
