@@ -6,7 +6,7 @@ hide:
     - navigation
 ---
 
----8<--- "includes/canvas.md:cnest"
+---8<--- "canvas.md:cnest"
 
 # 引力弹弓 - Gravity Slingshot
 

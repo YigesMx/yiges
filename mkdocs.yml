@@ -1,8 +1,10 @@
 # ========== Site Information ==========
 site_name: Yiges
 site_url: https://www.yiges.site
+site_author: Yiges.M.x.
 site_description: >
   这个站点的主要是我个人整理的一些内容和资源分享，将来的 Projects 也会发布在这上面，欢迎大家共同讨论，提出建议，一起交流。
+
 
 copyright: >
   Copyright &copy; 2018 - NOW Yiges.M.x., all rights reserved. –
@@ -40,25 +42,32 @@ nav:
       - Harvest/工具和项目/index.md
     - 影音资源:
       - Harvest/影音/常用资源站.md
-      - 影评及回顾:
-        - Harvest/影音/review/index.md
-        - Harvest/影音/review/2022-0910-LOTR-TROP.md
+      - Harvest/影音/我的歌单.md
   - slipspace.md
 
 # ========== Extra Loading & Process ==========
 
 extra_javascript:
-  # - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - assets/js/katex.js
   - https://unpkg.com/katex@0/dist/katex.min.js
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+  - assets/js/config-katex.js
+
+  - https://unpkg.com/vue@3/dist/vue.global.prod.js
+  - https://unpkg.com/naive-ui@2.39.0/dist/index.prod.js
+  - assets/js/yiges-vue-app-manager.js
+
+  - assets/js/auto-update-copyright-date.js
 
 extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
-  # - assets/css/mdui.css
+  - https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css
+  - assets/css/globe-fix.css
+  - assets/css/yiges-horizontal-cards.css
+  - assets/css/theme-fix.css
 
 watch:
   - includes
+  - overrides
 
 # ========== Theme Configuration & Plugins ==========
 theme:
@@ -119,7 +128,7 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       primary: blue grey
-      accent: cyan
+      accent: teal
       scheme: slate
       toggle:
         icon: material/brightness-4
@@ -251,8 +260,11 @@ markdown_extensions:
       permalink: true
   # 片段，详见 https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets:
+      base_path: 
+        - includes
+      check_paths: true
       auto_append:
-        - includes/global_abbreviations.md
+        - global_abbreviations.md
   # 分栏，使用 === "TabName" 换行缩进+内容，来新建一个 Tab ，https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/
   - pymdownx.tabbed:
       alternate_style: true

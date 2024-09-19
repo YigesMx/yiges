@@ -11,7 +11,32 @@ hide:
 status: new
 ---
 
-<!-- ---8<--- "includes/canvas.md:cnest"  -->
+<!-- ---8<--- "canvas.md:cnest"  -->
+<!-- ---8<--- "vueApps/utils.md:auto-mount-yiges-global-vue-apps" -->
+
+<!-- <div id="yiges-vue-app-xxx">
+<n-config-provider :theme="theme" :theme-overrides="themeOverrides">
+</n-config-provider>
+</div> -->
+
+<!-- <script>
+document.addEventListener('YigesVueAppManagerReady', () => {
+    const yigesVueAppManager = YigesVueAppManager.get('yiges-vue-app-xxx')
+    const hello = 'Hello, World!'
+    const App = {
+        setup() {
+            return {
+                theme: yigesVueAppManager.theme,
+                themeOverrides: yigesVueAppManager.themeOverrides
+            }
+        },
+        // unmounted() {
+        //     console.log('Component destroyed');
+        // }
+    }
+    yigesVueAppManager.create(App)
+});
+</script> -->
 
 # 终端机 - Terminal
 

@@ -1,0 +1,22 @@
+.yiges-horizontal-cards {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.yiges-horizontal-card {
+    width: 192px; 
+    height: 192px;
+    display: inline-flex;
+    overflow: hidden;
+    margin: 10px 5px 20px 5px;
+}
+
+.yiges-horizontal-card .n-card__content {
+    flex:1;
+}
+
+.yiges-horizontal-card .n-card__footer .n-button {
+    float: right;
+}

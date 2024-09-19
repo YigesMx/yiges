@@ -6,7 +6,7 @@ hide:
     - navigation
 ---
 
----8<--- "includes/canvas.md:cnest"
+---8<--- "canvas.md:cnest"
 
 # 索引器 - Index
 
@@ -56,15 +56,9 @@ hide:
 
 ### 主页
 
-<mdui-tooltip content="GitHub">
-[![GitHub](https://img.shields.io/github/followers/YigesMx?label=GitHub&style=social){style="vertical-align: middle;"}](https://github.com/YigesMx){style="margin: 0px 8px;"} 
-</mdui-tooltip>
-<mdui-tooltip content="此网站">
-[![Website](https://img.shields.io/badge/yiges.site-%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-green?style=social&logo=markdown){style="vertical-align: middle;"}](#){style="margin: 0px 8px;"}
-</mdiu-tooltip>
-<mdui-tooltip content="Bilibili">
-[![Bilibili](https://img.shields.io/badge/bilibili-B%E7%AB%99-blue?style=social&logo=bilibili){style="vertical-align: middle;"}](https://space.bilibili.com/83527634){style="margin: 0px 8px;"}
-</mdui-tooltip>
+[![GitHub](https://img.shields.io/github/followers/YigesMx?label=GitHub&style=social "GitHub"){style="vertical-align: middle;"}](https://github.com/YigesMx){style="margin: 0px 8px;"} 
+[![Website](https://img.shields.io/badge/yiges.site-%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-green?style=social&logo=markdown "此网站"){style="vertical-align: middle;"}](#){style="margin: 0px 8px;"} 
+[![Bilibili](https://img.shields.io/badge/bilibili-B%E7%AB%99-blue?style=social&logo=bilibili "BiliBili"){style="vertical-align: middle;"}](https://space.bilibili.com/83527634){style="margin: 0px 8px;"}
 
 ### 技术栈
 

@@ -7,7 +7,7 @@ hide:
     - navigation
 ---
 
----8<--- "includes/canvas.md:cnest"
+---8<--- "canvas.md:cnest"
 
 # 终端机 - Terminal
 

@@ -11,6 +11,9 @@ export const createCanvasNest = (
     }={}
 ) => {
 
+    const testElement = document.getElementById(tagID);
+    if (!testElement) return;
+
     function e(e) {
         return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e
     }

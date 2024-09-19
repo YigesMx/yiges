@@ -7,7 +7,7 @@ hide:
     - toc
 ---
 
----8<--- "includes/canvas.md:cnest"
+---8<--- "canvas.md:cnest"
 
 # 滑流空间 - Slipspace
 

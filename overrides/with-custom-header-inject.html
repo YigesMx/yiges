@@ -10,64 +10,9 @@
 
 {{ super() }}
 
-<link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
-<script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
-
-<style>
-    html { /*fix the scale influence of mdui*/
-        font-size: 20px!important;
-    }
-    
-    .yiges-globe iframe { /*for globe's transparence*/
-        color-scheme: light !important;
-    }
-</style>
-
-<script type="text/javascript">
-    mdui.setColorScheme('#55BAD3');
-
-    const update_mdui_theme = async (attr) => {
-
-        mdui.setColorScheme('#55BAD3');
-        
-        if (attr === '(prefers-color-scheme: light)') {
-            mdui.setTheme('light');
-        } else if (attr === '(prefers-color-scheme: dark)') {
-            mdui.setTheme('dark');
-        } else {
-            mdui.setTheme('auto');
-        }
-    }
-
-    // watch the body element's data-md-color-media attribute
-    document.addEventListener('DOMContentLoaded', function () {
-
-        const body = document.body;
-        
-        // update first loaded
-        const scheme = body.getAttribute('data-md-color-media');
-        update_mdui_theme(scheme);
-
-        const observer = new MutationObserver(function (mutations) {
-            console.log(mutations);
-            mutations.forEach(function (mutation) {
-                if (mutation.attributeName === 'data-md-color-media') {
-                    const scheme = body.getAttribute('data-md-color-media');
-                    
-                    update_mdui_theme(scheme);
-                }
-            });
-        });
-
-        observer.observe(body, {
-            attributes: true,
-            attributeFilter: ['data-md-color-media'],
-        });
-    });
-</script>
-
+<!-- 尝试向 cnest 元素注入 canvas-nest -->
 <script type="module">
-    import {createCanvasNest} from '/assets/js/canvas-nest.js';
+    import {createCanvasNest} from '/assets/js/canvas/canvas-nest.js';
     document.addEventListener('DOMContentLoaded', function () {
         document$.subscribe(({ body }) => { 
             createCanvasNest("cnest", {
@@ -82,14 +27,4 @@
     });
 </script>
 
-<script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function () {
-        
-        document$.subscribe(({ body }) => { 
-            const globe = document.querySelector('.md-copyright__highlight');
-            // 将其中的 NOW 改为当前年份
-            globe.innerHTML = globe.innerHTML.replace('NOW', new Date().getFullYear());
-        })
-    });
-</script>
 {% endblock %}
