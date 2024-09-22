@@ -7,7 +7,13 @@ site_description: >
 
 
 copyright: >
-  Copyright &copy; 2018 - NOW Yiges.M.x., all rights reserved. –
+  Copyright &copy; 2018 - NOW Yiges.M.x., all rights reserved.
+  &nbsp;|&nbsp;
+  <a href="https://beian.miit.gov.cn/" target="_blank">蜀ICP备2024099498号-1</a>
+  &nbsp;|&nbsp;
+  <div style="display: inline-block; height: 12px;"><img src="/assets/public-security.png" alt="公安" style="height: 100%;"></div>
+  <a href="https://beian.mps.gov.cn/#/query/webSearch?code=11010802044966" rel="noreferrer" target="_blank">京公网安备11010802044966</a>
+  &nbsp;|&nbsp;
   <a href="#__consent">Change cookie settings</a>
 
 repo_url: https://github.com/YigesMx/yiges
@@ -36,10 +42,16 @@ nav:
       - Reach/折腾实录/2022-09-25-canves-nest-js.md
       - Reach/折腾实录/2022-10-27-Listary-and-fav-export.md
       - Reach/折腾实录/2024-09-11-deploy-searxng.md
+      - Reach/折腾实录/2024-09-19-vue-in-mkdocs.md
+      - Reach/折腾实录/2024-09-19-RevolverMaps.md
+      - Reach/折腾实录/2024-09-23-deploy-syncthing.md
   - 丰饶:
     - Harvest/index.md
     - 工具和项目:
       - Harvest/工具和项目/index.md
+      - Harvest/工具和项目/2024-09-15-mac-quicklook-plugin.md
+      - Harvest/工具和项目/2024-09-15-windows-quicklook.md
+      - Harvest/工具和项目/2024-09-23-sync-tools.md
     - 影音资源:
       - Harvest/影音/常用资源站.md
       - Harvest/影音/我的歌单.md
@@ -136,6 +148,7 @@ theme:
 
 
 plugins:
+  # - privacy
   - social:
       cards_layout_options:
         font_family: Noto Sans SC

@@ -5,7 +5,6 @@ description: "关于“链接”的一则简单介绍"
 tags:
   - Linux
   - Windows
-  - Link
   - Dev
 ---
 

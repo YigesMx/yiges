@@ -1,5 +1,9 @@
 site/
 .cache/
+.vscode/
+.idea/
 
 .user.ini
 .DS_Store
+
+sync.sh

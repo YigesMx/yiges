@@ -3,8 +3,7 @@ title: "Listary 介绍与使用"
 description: "本文介绍了 Listary 的基本功能与使用，以及如何使用 python 导出 Edge 书签为文件目录，并通过 Listary 实现书签搜索"
 
 tags:
-  - Listary 
-  - Edge
+  - Browser
   - Windows
   - Search
 ---

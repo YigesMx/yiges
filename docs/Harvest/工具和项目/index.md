@@ -3,9 +3,7 @@ title: "工具和项目"
 description: "www.yiges.site 常用工具和项目分享"
 
 tags:
-    - 工具
-    - 项目
-    - 分享
+    - 资源
 ---
 
 ---8<--- "vueApps/utils.md:auto-mount-yiges-global-vue-apps"

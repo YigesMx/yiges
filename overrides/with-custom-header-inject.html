@@ -28,3 +28,26 @@
 </script>
 
 {% endblock %}
+
+{% block fonts %}
+
+    <!-- Load fonts from Google -->
+    {% if config.theme.font != false %}
+    {% set text = config.theme.font.get("text", "Roboto") %}
+    {% set code = config.theme.font.get("code", "Roboto Mono") %}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        rel="stylesheet"
+        href="https://fonts.font.im/css?family={{
+        text | replace(' ', '+') + ':300,300i,400,400i,700,700i%7C' +
+        code | replace(' ', '+') + ':400,400i,700,700i'
+        }}&display=fallback"
+    />
+    <style>
+        :root {
+        --md-text-font: "{{ text }}";
+        --md-code-font: "{{ code }}";
+        }
+    </style>
+    {% endif %}
+{% endblock %}
