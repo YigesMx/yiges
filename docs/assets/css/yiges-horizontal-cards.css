@@ -6,15 +6,21 @@
 }
 
 .yiges-horizontal-card {
-    width: 192px; 
-    height: 192px;
+    width: 212px; 
+    height: 212px;
     display: inline-flex;
-    overflow: hidden;
     margin: 10px 5px 20px 5px;
+    white-space: normal;
 }
 
 .yiges-horizontal-card .n-card__content {
     flex:1;
+    overflow-y: hidden;
+}
+
+.yiges-horizontal-card .n-card__content .yiges-horizontal-card-content {
+    height: 100%;
+    overflow-y: scroll;
 }
 
 .yiges-horizontal-card .n-card__footer .n-button {

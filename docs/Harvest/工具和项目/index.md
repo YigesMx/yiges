@@ -8,13 +8,18 @@ tags:
 
 ---8<--- "vueApps/utils.md:auto-mount-yiges-global-vue-apps"
 
-# 一些工具和项目
+# 推荐一些工具和项目
 
 ## 学习与科研
 
 ### AI
 
 ---8<--- "vueApps/工具和项目集合/ai.html"
+
+### 科研效率
+
+<!-- ---8<--- "vueApps/工具和项目集合/research.html" -->
+TODO
 
 ## 开发与工具
 

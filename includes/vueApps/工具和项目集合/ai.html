@@ -2,103 +2,93 @@
 <div id="yiges-global-vue-app-tools-ai" class="yiges-global-vue-app">
 <n-config-provider :theme="theme" :theme-overrides="themeOverrides">
     <n-h3 prefix="bar">
-        <i class="ri-openai-fill"></i>
-        AI 平台
+        <i class="ri-openai-fill"></i> LLM 平台
     </n-h3>
-    <div markdown="0" class="yiges-horizontal-cards">
-        <n-card title="卡片1" class="yiges-horizontal-card" hoverable>
-            <template #header-extra>
-            #header-extra
-            </template>
+    <div class="yiges-horizontal-cards">
+        <n-card title="OpenAI" class="yiges-horizontal-card" hoverable>
+            <div class="yiges-horizontal-card-content">
+                就不用多介绍了吧 😏
+            </div>
             <template #footer>
-                <n-button @click="window.open('https://www.baidu.com', '_blank')"  type="primary">
-                    前往 <i class="ri-arrow-right-line"></i>
+                <n-button @click="window.open('https://chatgpt.com/', '_blank')" secondary type="primary">
+                    前往 ChatGPT <i class="ri-arrow-right-line"></i>
                 </n-button>
             </template>
-                content
         </n-card>
-        <n-card title="卡片2" class="yiges-horizontal-card" hoverable>
-            <template #header-extra>
-            #header-extra
-            </template>
+        <n-card title="Anthropic" class="yiges-horizontal-card" hoverable>
+            <div class="yiges-horizontal-card-content">
+                他们最出名的产品便是 Claude
+            </div>
             <template #footer>
-                <n-button @click="window.open('https://www.baidu.com', '_blank')" secondary type="primary">
-                    前往 <i class="ri-arrow-right-line"></i>
+                <n-button @click="window.open('https://claude.ai/', '_blank')" secondary type="primary">
+                    前往 Claude <i class="ri-arrow-right-line"></i>
                 </n-button>
             </template>
-                content
         </n-card>
-        <n-card title="卡片3" class="yiges-horizontal-card" hoverable>
-            <template #header-extra>
-            #header-extra
-            </template>
+        <n-card title="智谱清言" class="yiges-horizontal-card" hoverable>
+            <div class="yiges-horizontal-card-content">
+                国内 LLM 第一梯队，还有视频模型等
+            </div>
             <template #footer>
-                <n-button @click="window.open('https://www.baidu.com', '_blank')" secondary type="primary">
-                    前往 <i class="ri-arrow-right-line"></i>
+                <n-button @click="window.open('https://chatglm.cn/main/alltoolsdetail', '_blank')" secondary type="primary">
+                    前往 ChatGLM <i class="ri-arrow-right-line"></i>
                 </n-button>
             </template>
-                content
         </n-card>
-        <n-card title="卡片4" class="yiges-horizontal-card" hoverable>
-            <template #header-extra>
-            #header-extra
-            </template>
+        <n-card title="月之暗面" class="yiges-horizontal-card" hoverable>
+            <div class="yiges-horizontal-card-content">
+                Kimi 虽然不太聪明，但脑容量大啊
+            </div>
             <template #footer>
-                <n-button @click="window.open('https://www.baidu.com', '_blank')" secondary type="primary">
-                    前往 <i class="ri-arrow-right-line"></i>
+                <n-button @click="window.open('https://kimi.moonshot.cn/', '_blank')" secondary type="primary">
+                    前往 Kimi <i class="ri-arrow-right-line"></i>
                 </n-button>
             </template>
-                content
+        </n-card>
+        <n-card title="Metaso" class="yiges-horizontal-card" hoverable>
+            <div class="yiges-horizontal-card-content">
+                面向科研狗的 AI 平台，可以进行学术内容总结与问答
+            </div>
+            <template #footer>
+                <n-button @click="window.open('https://metaso.cn', '_blank')" secondary type="primary">
+                    前往 Metaso <i class="ri-arrow-right-line"></i>
+                </n-button>
+            </template>
+        </n-card>
+        <n-card title="Devv" class="yiges-horizontal-card" hoverable>
+            <div class="yiges-horizontal-card-content">
+                面向程序员的 AI 搜索引擎，可以使用多家供应商的 AI 模型
+            </div>
+            <template #footer>
+                <n-button @click="window.open('https://devv.ai/zh', '_blank')" secondary type="primary">
+                    前往 Devv <i class="ri-arrow-right-line"></i>
+                </n-button>
+            </template>
+        </n-card>
+        <n-card title="Perplexity" class="yiges-horizontal-card" hoverable>
+            <div class="yiges-horizontal-card-content">
+                非常强大的 AI 搜索引擎，可以使用多家供应商的 AI 模型，但多轮对话有点笨……
+            </div>
+            <template #footer>
+                <n-button @click="window.open('https://www.perplexity.ai/', '_blank')" secondary type="primary">
+                    前往 Perplexity <i class="ri-arrow-right-line"></i>
+                </n-button>
+            </template>
         </n-card>
     </div>
-
     <n-h3 prefix="bar">
         <i class="ri-tools-fill"></i> AI 工具
     </n-h3>
     <div markdown="0" class="yiges-horizontal-cards">
-        <n-card title="卡片1" class="yiges-horizontal-card" hoverable>
-            <template #header-extra>
-            #header-extra
-            </template>
+        <n-card :title="()=>{return Vue.h('div',['Anthropic',Vue.h('br'),'Prompt Library'])}" class="yiges-horizontal-card" hoverable>
+            <div class="yiges-horizontal-card-content">
+                Anthropic 提供的 Prompt Library，可以帮助你更好地使用 LLM
+            </div>
             <template #footer>
-                <n-button @click="window.open('https://www.baidu.com', '_blank')" secondary type="primary">
-                    前往 <i class="ri-arrow-right-line"></i>
+                <n-button @click="window.open('https://docs.anthropic.com/en/prompt-library/library', '_blank')" secondary type="primary">
+                    前往 Prompt Lib <i class="ri-arrow-right-line"></i>
                 </n-button>
             </template>
-                content
-        </n-card>
-        <n-card title="卡片2" class="yiges-horizontal-card" hoverable>
-            <template #header-extra>
-            #header-extra
-            </template>
-            <template #footer>
-                <n-button @click="window.open('https://www.baidu.com', '_blank')" secondary type="primary">
-                    前往 <i class="ri-arrow-right-line"></i>
-                </n-button>
-            </template>
-                content
-        </n-card>
-        <n-card title="卡片3" class="yiges-horizontal-card" hoverable>
-            <template #header-extra>
-            #header-extra
-            </template>
-            <template #footer>
-                <n-button @click="window.open('https://www.baidu.com', '_blank')" secondary type="primary">
-                    前往 <i class="ri-arrow-right-line"></i>
-                </n-button>
-            </template>
-                content
-        </n-card>
-        <n-card title="卡片4" class="yiges-horizontal-card" hoverable>
-            <template #header-extra>
-            #header-extra
-            </template>
-            <template #footer>
-                <n-button @click="window.open('https://www.baidu.com', '_blank')" secondary type="primary">
-                    前往 <i class="ri-arrow-right-line"></i>
-                </n-button>
-            </template>
-                content
         </n-card>
     </div>
 </n-config-provider>

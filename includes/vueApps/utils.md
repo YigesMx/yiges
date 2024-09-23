@@ -17,7 +17,8 @@ document.addEventListener('YigesVueAppManagerReady', () => {
                 return {
                     window: window,
                     theme: yigesVueAppManager.theme,
-                    themeOverrides: yigesVueAppManager.themeOverrides
+                    themeOverrides: yigesVueAppManager.themeOverrides,
+                    Vue: Vue,
                 }
             },
             unmounted() {
