@@ -6,7 +6,8 @@ tags:
     - 资源
 ---
 
----8<--- "vueApps/utils.md:auto-mount-yiges-global-vue-apps"
+---8<--- "vueApps/utils.md:auto-reload-yiges-vue-apps"
+
 
 # 推荐一些工具和项目
 

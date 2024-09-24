@@ -62,9 +62,13 @@ document.addEventListener('DOMContentLoaded', function () {
             return new Object({
                 appTagID: appTagID,
                 app: null,
-                theme: theme,
-                themeOverrides: themeOverrides,
-                create: function(App) {
+                defaultSetups: {
+                    theme: theme,
+                    themeOverrides: themeOverrides,
+                    window: window,
+                    Vue: Vue,
+                },
+                mountApp: function(App) {
                     const app = Vue.createApp(App);
                     app.use(naive);
                     app.mount(`#${this.appTagID}`);
@@ -76,13 +80,13 @@ document.addEventListener('DOMContentLoaded', function () {
     
         return {
             instances,
-            get(appTagID) {
+            getManagerById(appTagID) {
                 if (!instances[appTagID]) {
                     instances[appTagID] = createInstance(appTagID);
                 }
                 return instances[appTagID];
             },
-            delete(appTagID) {
+            deleteManagerById(appTagID) {
                 if (instances[appTagID]) {
                     delete instances[appTagID];
                 }
@@ -96,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
         //nmount all vue apps
         for (const key in YigesVueAppManager.instances) {
             YigesVueAppManager.instances[key].app.unmount();
-            YigesVueAppManager.delete(key);
+            YigesVueAppManager.deleteManagerById(key);
         }
 
         const event = new Event('YigesVueAppManagerReady');
