@@ -11,6 +11,8 @@ tags:
 
 # 推荐一些工具和项目
 
+> 这里主要推荐一些我使用后筛选的觉得不错的工具和项目，会不断更新修改，也欢迎大家在评论区推荐。
+
 ## 学习与科研
 
 ### AI
@@ -19,8 +21,7 @@ tags:
 
 ### 科研效率
 
-<!-- ---8<--- "vueApps/工具和项目集合/research.html" -->
-TODO
+---8<--- "vueApps/工具和项目集合/research.html"
 
 ## 开发与工具
 
@@ -30,12 +31,6 @@ TODO
 | --------------------------------- | ------------------------- | ----------------------------------- |
 | :material-web: Web 应用 |                           |                                     |
 | :octicons-terminal-16: Shell 工具 |  sgpt tldr                         |                                     |
-
-### 创意与设计
-
-| :material-archive: 合集          | :material-apps: 应用/项目 | :material-information-box: 站内介绍 |
-| ------------------------------- | ------------------------- | ----------------------------------- |
-| :material-palette-outline: 色彩工具 |                           |                                     |
 
 ### 系统增强
 
@@ -49,3 +44,9 @@ TODO
 | :material-archive: 合集             | :material-apps: 应用/项目 | :material-information-box: 站内介绍 |
 | --------------------------------- | ------------------------- | ----------------------------------- |
 | :material-download: 下载      |      IDM Motrix                      |                                     |
+
+## 创意与设计
+
+| :material-archive: 合集          | :material-apps: 应用/项目 | :material-information-box: 站内介绍 |
+| ------------------------------- | ------------------------- | ----------------------------------- |
+| :material-palette-outline: 色彩工具 |                           |                                     |

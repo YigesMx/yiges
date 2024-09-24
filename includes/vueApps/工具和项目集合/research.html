@@ -1,105 +1,49 @@
+<script>
+    document.addEventListener('YigesVueAppManagerReady', () => {
+        const data = [
+            {
+                sectionTitle: "文档撰写",
+                sectionIcon: "ri-quill-pen-line",
+                content: [
+                    {
+                        title: "Pandoc",
+                        content: "一个文档转换工具，可以实现 Latex 与多种标记语言之间的互相转换",
+                        link: "/Harvest/工具和项目/2024-09-20-pandoc-md-latex/",
+                        buttonText: "介绍"
+                    },
+                    {
+                        title: "Tables Generator",
+                        content: "一个在线表格生成工具，可以生成多种格式的表格，包括 LaTeX, Markdown, HTML, 等",
+                        link: "https://www.tablesgenerator.com/",
+                        buttonText: "Tables Generator"
+                    },
+                ]
+            },
+            {
+                sectionTitle: "科研绘图",
+                sectionIcon: "ri-pencil-ruler-line",
+                content: [
+                    {
+                        title: ()=>{return Vue.h('div',['Anthropic',Vue.h('br'),'Prompt Library'])},
+                        content: "Anthropic 提供的 Prompt Library，可以帮助你更好地使用 LLM",
+                        link: "https://docs.anthropic.com/en/prompt-library/library",
+                        buttonText: "Prompt Lib"
+                    },
+                ]
+            },
+        ]
+        const yigesVueAppManager = YigesVueAppManager.getManagerById("yiges-vue-app-tools-research")
+        yigesVueAppManager.mountApp({
+            setup() {
+                return {
+                    ...yigesVueAppManager.defaultSetups,
+                    data: data
+                }
+            }
+        })
+    });
+</script>
 
-<div id="yiges-global-vue-app-tools-research" class="yiges-global-vue-app">
-<n-config-provider :theme="theme" :theme-overrides="themeOverrides">
-    <n-h3 prefix="bar">
-        <i class="ri-openai-fill"></i>
-        AI 平台
-    </n-h3>
-    <div markdown="0" class="yiges-horizontal-cards">
-        <n-card title="卡片1" class="yiges-horizontal-card" hoverable>
-            <template #header-extra>
-            #header-extra
-            </template>
-            <template #footer>
-                <n-button @click="window.open('https://www.baidu.com', '_blank')"  type="primary">
-                    前往 <i class="ri-arrow-right-line"></i>
-                </n-button>
-            </template>
-                content
-        </n-card>
-        <n-card title="卡片2" class="yiges-horizontal-card" hoverable>
-            <template #header-extra>
-            #header-extra
-            </template>
-            <template #footer>
-                <n-button @click="window.open('https://www.baidu.com', '_blank')" secondary type="primary">
-                    前往 <i class="ri-arrow-right-line"></i>
-                </n-button>
-            </template>
-                content
-        </n-card>
-        <n-card title="卡片3" class="yiges-horizontal-card" hoverable>
-            <template #header-extra>
-            #header-extra
-            </template>
-            <template #footer>
-                <n-button @click="window.open('https://www.baidu.com', '_blank')" secondary type="primary">
-                    前往 <i class="ri-arrow-right-line"></i>
-                </n-button>
-            </template>
-                content
-        </n-card>
-        <n-card title="卡片4" class="yiges-horizontal-card" hoverable>
-            <template #header-extra>
-            #header-extra
-            </template>
-            <template #footer>
-                <n-button @click="window.open('https://www.baidu.com', '_blank')" secondary type="primary">
-                    前往 <i class="ri-arrow-right-line"></i>
-                </n-button>
-            </template>
-                content
-        </n-card>
-    </div>
-
-    <n-h3 prefix="bar">
-        <i class="ri-tools-fill"></i> AI 工具
-    </n-h3>
-    <div markdown="0" class="yiges-horizontal-cards">
-        <n-card title="卡片1" class="yiges-horizontal-card" hoverable>
-            <template #header-extra>
-            #header-extra
-            </template>
-            <template #footer>
-                <n-button @click="window.open('https://www.baidu.com', '_blank')" secondary type="primary">
-                    前往 <i class="ri-arrow-right-line"></i>
-                </n-button>
-            </template>
-                content
-        </n-card>
-        <n-card title="卡片2" class="yiges-horizontal-card" hoverable>
-            <template #header-extra>
-            #header-extra
-            </template>
-            <template #footer>
-                <n-button @click="window.open('https://www.baidu.com', '_blank')" secondary type="primary">
-                    前往 <i class="ri-arrow-right-line"></i>
-                </n-button>
-            </template>
-                content
-        </n-card>
-        <n-card title="卡片3" class="yiges-horizontal-card" hoverable>
-            <template #header-extra>
-            #header-extra
-            </template>
-            <template #footer>
-                <n-button @click="window.open('https://www.baidu.com', '_blank')" secondary type="primary">
-                    前往 <i class="ri-arrow-right-line"></i>
-                </n-button>
-            </template>
-                content
-        </n-card>
-        <n-card title="卡片4" class="yiges-horizontal-card" hoverable>
-            <template #header-extra>
-            #header-extra
-            </template>
-            <template #footer>
-                <n-button @click="window.open('https://www.baidu.com', '_blank')" secondary type="primary">
-                    前往 <i class="ri-arrow-right-line"></i>
-                </n-button>
-            </template>
-                content
-        </n-card>
-    </div>
-</n-config-provider>
+<div id="yiges-vue-app-tools-research">
+---8<--- "vueApps/yiges-horizontal-cards.html"
 </div>

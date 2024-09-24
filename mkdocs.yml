@@ -161,6 +161,9 @@ plugins:
       type: date
       enable_creation_date: true
       fallback_to_build_date: true
+  - add-number:
+        strict_mode: False
+        order: 2
 
 extra:
   # generator: false # Made with Material for MkDocs notice

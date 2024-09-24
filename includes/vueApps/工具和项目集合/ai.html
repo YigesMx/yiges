@@ -2,60 +2,98 @@
     document.addEventListener('YigesVueAppManagerReady', () => {
         const data = [
             {
-                sectionTitle: "LLM 平台",
+                sectionTitle: "LLM 问答智能体平台",
+                sectionIcon: "ri-openai-fill",
                 content: [
                     {
                         title: "OpenAI",
                         content: "就不用多介绍了吧 😏",
                         link: "https://chatgpt.com/",
-                        buttonText: "前往 ChatGPT"
+                        buttonText: "ChatGPT"
                     },
                     {
                         title: "Anthropic",
                         content: "他们最出名的产品便是 Claude",
                         link: "https://claude.ai/",
-                        buttonText: "前往 Claude"
+                        buttonText: "Claude"
                     },
                     {
                         title: "智谱清言",
                         content: "国内 LLM 第一梯队，还有视频模型等",
                         link: "https://chatglm.cn/main/alltoolsdetail",
-                        buttonText: "前往 ChatGLM"
+                        buttonText: "ChatGLM"
                     },
                     {
                         title: "月之暗面",
                         content: "Kimi 虽然不太聪明，但脑容量大啊",
                         link: "https://kimi.moonshot.cn/",
-                        buttonText: "前往 Kimi"
+                        buttonText: "Kimi"
+                    },
+                    {
+                        title: "Poe",
+                        content: "Poe 是一个智能体平台，以使用多家供应商的 AI 模型",
+                        link: "https://poe.com/",
+                        buttonText: "Poe"
                     },
                     {
                         title: "Metaso",
-                        content: "面向科研狗的 AI 平台，可以进行学术内容总结与问答",
+                        content: "面向科研狗的 AI 学术搜索平台，可以进行学术内容总结与问答",
                         link: "https://metaso.cn",
-                        buttonText: "前往 Metaso"
+                        buttonText: "Metaso"
                     },
                     {
                         title: "Devv",
                         content: "面向程序员的 AI 搜索引擎，可以使用多家供应商的 AI 模型",
                         link: "https://devv.ai/zh",
-                        buttonText: "前往 Devv"
+                        buttonText: "Devv"
                     },
                     {
                         title: "Perplexity",
                         content: "非常强大的 AI 搜索引擎，可以使用多家供应商的 AI 模型，但多轮对话有点笨……",
                         link: "https://www.perplexity.ai/",
-                        buttonText: "前往 Perplexity"
+                        buttonText: "Perplexity"
                     }
                 ]
             },
             {
-                sectionTitle: "AI 工具",
+                sectionTitle: "LLM 增强",
+                sectionIcon: "ri-arrow-up-double-line",
                 content: [
                     {
                         title: ()=>{return Vue.h('div',['Anthropic',Vue.h('br'),'Prompt Library'])},
                         content: "Anthropic 提供的 Prompt Library，可以帮助你更好地使用 LLM",
                         link: "https://docs.anthropic.com/en/prompt-library/library",
-                        buttonText: "前往 Prompt Lib"
+                        buttonText: "Prompt Lib"
+                    },
+                    {
+                        title: "Super Prompt",
+                        content: "一个针对 Claude 优化的万能 Prompt，提升效果非常显著，其他 LLM 也可以使用",
+                        link: "https://github.com/NeoVertex1/SuperPrompt",
+                        buttonText: "Super Prompt"
+                    }
+                ]
+            },
+            {
+                sectionTitle: "基于 AI 的工具",
+                sectionIcon: "ri-hammer-line",
+                content: [
+                    {
+                        title: "QRBTF",
+                        content: "一个基于文生图模型的二维码制作工具，挺有意思的",
+                        link: "https://qrbtf.com/zh",
+                        buttonText: "QRBTF"
+                    },
+                    {
+                        title: "Copilot",
+                        content: "GitHub 的 AI 代码助手，可以根据提示帮你编写代码和查找错误，你也可以询问它相关问题",
+                        link: "https://copilot.github.com/",
+                        buttonText: "Copilot 官网"
+                    },
+                    {
+                        title: "CodeGeex",
+                        content: "智谱清言出品的代码助手，算是国内 Copilot 不错的替代品，效果也不错",
+                        link: "https://codegeex.cn/",
+                        buttonText: "CodeGeex 官网"
                     }
                 ]
             }
@@ -73,5 +111,5 @@
 </script>
 
 <div id="yiges-vue-app-tools-ai">
----8<--- "vueApps/工具和项目集合/yiges-horizontal-cards.html"
+---8<--- "vueApps/yiges-horizontal-cards.html"
 </div>
