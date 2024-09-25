@@ -21,7 +21,7 @@ tags:
 
 ### 科研效率
 
-<!-- ---8<--- "vueApps/工具和项目集合/research.html" -->
+---8<--- "vueApps/工具和项目集合/research.html"
 
 ## 开发与工具
 
