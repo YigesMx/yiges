@@ -3,11 +3,12 @@
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+    padding-left: 5px;
 }
 
 .yiges-horizontal-card {
-    width: 256px; 
-    height: 256px;
+    width: 233px; 
+    height: 233px;
     display: inline-flex;
     margin: 10px 5px 20px 5px;
     white-space: normal;
@@ -16,6 +17,28 @@
 .yiges-horizontal-card .n-card__content {
     flex:1;
     overflow-y: hidden;
+}
+
+.yiges-horizontal-card .n-card-header .n-h div {
+    display: inline-block;
+}
+
+.yiges-horizontal-card .n-card-header .n-h img {
+    height: 1em;
+    vertical-align: -0.15em;
+
+    border-radius: 33%;
+    background-color: #fff;
+    /* 弱虚化的阴影 */
+    filter: drop-shadow(0 0 0.1rem rgba(0, 0, 0, 0.15));
+}
+
+.yiges-horizontal-card .n-card-header .n-h img.no-backshadow {
+    background-color: rgba(0,0,0,0);
+    filter: none;
+}
+.yiges-horizontal-card .n-card-header .n-h img.no-radius {
+    border-radius: 0;
 }
 
 .yiges-horizontal-card .n-card__content .yiges-horizontal-card-content {

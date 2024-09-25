@@ -1,49 +1,103 @@
-<script>
-    document.addEventListener('YigesVueAppManagerReady', () => {
-        const data = [
-            {
-                sectionTitle: "文档撰写",
-                sectionIcon: "ri-quill-pen-line",
-                content: [
-                    {
-                        title: "Pandoc",
-                        content: "一个文档转换工具，可以实现 Latex 与多种标记语言之间的互相转换",
-                        link: "/Harvest/工具和项目/2024-09-20-pandoc-md-latex/",
-                        buttonText: "介绍"
-                    },
-                    {
-                        title: "Tables Generator",
-                        content: "一个在线表格生成工具，可以生成多种格式的表格，包括 LaTeX, Markdown, HTML, 等",
-                        link: "https://www.tablesgenerator.com/",
-                        buttonText: "Tables Generator"
-                    },
-                ]
-            },
-            {
-                sectionTitle: "科研绘图",
-                sectionIcon: "ri-pencil-ruler-line",
-                content: [
-                    {
-                        title: ()=>{return Vue.h('div',['Anthropic',Vue.h('br'),'Prompt Library'])},
-                        content: "Anthropic 提供的 Prompt Library，可以帮助你更好地使用 LLM",
-                        link: "https://docs.anthropic.com/en/prompt-library/library",
-                        buttonText: "Prompt Lib"
-                    },
-                ]
-            },
-        ]
-        const yigesVueAppManager = YigesVueAppManager.getManagerById("yiges-vue-app-tools-research")
-        yigesVueAppManager.mountApp({
-            setup() {
-                return {
-                    ...yigesVueAppManager.defaultSetups,
-                    data: data
-                }
-            }
-        })
-    });
-</script>
-
 <div id="yiges-vue-app-tools-research">
----8<--- "vueApps/yiges-horizontal-cards.html"
+    ---8<--- "vueApps/yiges-horizontal-cards.html"
 </div>
+
+<script>
+    document.addEventListener('YigesVueAppManagerReady', ()=>{
+        document.addEventListener('YigesVueAppManagerReload', ()=>{
+            const data = [
+                {
+                    sectionTitle: "文档撰写",
+                    sectionIcon: "ri-quill-pen-line",
+                    content: [
+                        {
+                            title: "Pandoc",
+                            icon: "ri-article-line",
+                            content: "一个文档转换工具，可以实现 Latex 与多种标记语言之间的互相转换",
+                            link: "/Harvest/工具和项目/2024-09-20-pandoc-md-latex/",
+                            buttonText: "查看介绍"
+                        },
+                        {
+                            title: "Tables Generator",
+                            icon: {
+                                url: "/assets/img/icon/tablesgenerator.png",
+                                noBackshadow: true,
+                                noRadius: true,
+                            },
+                            content: "一个在线表格生成工具，可以生成多种格式的表格，包括 LaTeX, Markdown, HTML 等",
+                            link: "https://www.tablesgenerator.com/",
+                            buttonText: "Tables Generator"
+                        },
+                    ]
+                },
+                {
+                    sectionTitle: "科研绘图",
+                    sectionIcon: "ri-pencil-ruler-line",
+                    content: [
+                        {
+                            title: "matplotlib",
+                            icon: {
+                                url: "/assets/img/icon/matplotlib.svg",
+                                noBackshadow: true,
+                            },
+                            content: "不用过多介绍了，Python 的著名绘图库，我也会不断更新一些 matplotlib 的使用笔记",
+                            link: "/",
+                            buttonText: "查看笔记"
+                        },
+                        {
+                            title: "draw.io",
+                            icon: {
+                                url: "/assets/img/icon/draw.io.ico",
+                                noBackshadow: true,
+                            },
+                            content: "一个在线绘图工具，支持多种图表类型，包括流程图、UML、网络拓扑图等，当然也可以随心所欲地绘图",
+                            link: "https://draw.io/",
+                            buttonText: "draw.io"
+                        },
+                        {
+                            title: "Inkscape",
+                            icon: {
+                                url: "/assets/img/icon/inkscape.svg",
+                                noBackshadow: true,
+                            },
+                            content: "一个开源的矢量图形编辑器，Illustrator 的轻量级开源替代品，适合用来绘制矢量图和加工编辑 SVG 图像",
+                            link: "https://inkscape.org/",
+                            buttonText: "Inkscape 官网"
+                        },
+                        {
+                            title: "Paint.NET",
+                            icon: {
+                                url: "/assets/img/icon/paint.net.ico",
+                                noBackshadow: true,
+                                noRadius: true,
+                            },
+                            content: "一个免费的位图编辑软件，适合用来进行简单的图像处理，精简而强大的 Photoshop 和 GIMP 替代品，可惜是 Windows 平台的",
+                            link: "https://www.getpaint.net/",
+                            buttonText: "Paint.NET 官网"
+                        },
+                        {
+                            title: "Pinta",
+                            icon: {
+                                url: "/assets/img/icon/pinta.ico",
+                                noBackshadow: true,
+                            },
+                            content: "一个开源的跨平台位图编辑软件，适合用来进行简单的图像处理，功能也算基本赶得上 Paint.NET，是 Paint.NET 的跨平台平替",
+                            link: "https://www.pinta-project.com/",
+                            buttonText: "Pinta 官网"
+                        },
+                    ]
+                },
+            ]
+            const yigesVueAppManager = YigesVueAppManager.getManagerById("yiges-vue-app-tools-research")
+            
+            yigesVueAppManager?.mountApp({
+                setup() {
+                    return {
+                        ...yigesVueAppManager.defaultSetups,
+                        data: data
+                    }
+                }
+            })
+        });
+    }, {once: true});
+</script>

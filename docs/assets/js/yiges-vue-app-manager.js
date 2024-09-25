@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', function () {
         let instances = {};
     
         function createInstance(appTagID) {
+            const targetElement = document.getElementById(appTagID);
+            if (!targetElement) {
+                return undefined;
+            }
 
             const body = document.querySelector('body');
 
@@ -44,7 +48,6 @@ document.addEventListener('DOMContentLoaded', function () {
             update_naive_theme(md_theme_mode);
 
             const observer = new MutationObserver(function (mutations) {
-                console.log(mutations);
                 mutations.forEach(function (mutation) {
                     if (mutation.attributeName === 'data-md-color-media') {
                         const md_theme_mode = body.getAttribute('data-md-color-media');
@@ -80,6 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
         return {
             instances,
+            eventTarget : new EventTarget(),
             getManagerById(appTagID) {
                 if (!instances[appTagID]) {
                     instances[appTagID] = createInstance(appTagID);
@@ -89,21 +93,27 @@ document.addEventListener('DOMContentLoaded', function () {
             deleteManagerById(appTagID) {
                 if (instances[appTagID]) {
                     delete instances[appTagID];
+                    instances[appTagID] = undefined;
                 }
             }
         };
     })();
     
     window.YigesVueAppManager = YigesVueAppManager;
+    const readyEvent = new Event('YigesVueAppManagerReady');
+    document.dispatchEvent(readyEvent);
 
     document$.subscribe(({ body }) => {
-        //nmount all vue apps
+        //unmount all vue apps
         for (const key in YigesVueAppManager.instances) {
+            if(!YigesVueAppManager.instances[key]) continue;
             YigesVueAppManager.instances[key].app.unmount();
             YigesVueAppManager.deleteManagerById(key);
         }
 
-        const event = new Event('YigesVueAppManagerReady');
-        document.dispatchEvent(event);
+        const reloadEvent = new Event('YigesVueAppManagerReload');
+        document.dispatchEvent(reloadEvent);
     });
+
 });
+

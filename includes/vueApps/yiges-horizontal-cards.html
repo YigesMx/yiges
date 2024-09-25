@@ -1,0 +1,35 @@
+<n-config-provider :theme="theme" :theme-overrides="themeOverrides">
+    <div v-for="section in data">
+        &nbsp;
+        <n-tag round size="large">
+            <i :class="[section.sectionIcon]"></i> {{ section.sectionTitle }}
+        </n-tag>
+        <div class="yiges-horizontal-cards">
+            <n-card v-for="item in section.content" class="yiges-horizontal-card" hoverable>
+                <template #header>
+                    <n-h4 style="margin: 0;" prefix="bar" align-text>
+                        <div v-if="item.icon">
+                            <i v-if="typeof item.icon === 'string'" :class="[item.icon]"></i>
+                            <img v-else v-bind:src="item.icon.url" style="display:inline-block" :class="{'no-backshadow': item.icon.noBackshadow, 'no-radius': item.icon.noRadius}"/>
+                            &thinsp;
+                        </div>
+                        <div v-if="typeof item.title === 'function'">
+                            <component :is="item.title"></component>
+                        </div>
+                        <div v-else>
+                            {{ item.title }}
+                        </div>
+                    </n-h4>
+                </template>
+                <div class="yiges-horizontal-card-content">
+                    {{ item.content }}
+                </div>
+                <template #footer>
+                    <n-button @click="window.open(item.link, '_blank')" secondary type="primary">
+                        {{ item.buttonText }}&thinsp;<i class="ri-arrow-right-line"></i>
+                    </n-button>
+                </template>
+            </n-card>
+        </div>
+    </div>
+</n-config-provider>
