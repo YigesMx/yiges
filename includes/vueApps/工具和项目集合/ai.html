@@ -3,153 +3,150 @@
 </div>
 
 <script>
-    document.addEventListener('YigesVueAppManagerReady', ()=>{
-        document.addEventListener('YigesVueAppManagerReload', ()=>{
-            const data = [
-                {
-                    sectionTitle: "LLM 问答智能体平台",
-                    sectionIcon: "ri-openai-fill",
-                    content: [
-                        {
-                            title: "OpenAI",
-                            icon: "ri-openai-fill",
-                            content: "就不用多介绍了吧 😏",
-                            link: "https://chatgpt.com/",
-                            buttonText: "ChatGPT"
-                        },
-                        {
-                            title: "Anthropic",
-                            icon: {
-                                url: "/assets/img/icon/anthropic.ico",
+    YigesEventManager.subscribe("YigesVueAppManagerReload", "yiges-vue-app-tools-ai", ()=>{
+        YigesVueAppManager.mountApp("yiges-vue-app-tools-ai",{
+            setup() {
+                const data = [
+                    {
+                        sectionTitle: "LLM 问答智能体平台",
+                        sectionIcon: "ri-openai-fill",
+                        content: [
+                            {
+                                title: "OpenAI",
+                                icon: "ri-openai-fill",
+                                content: "就不用多介绍了吧 😏",
+                                link: "https://chatgpt.com/",
+                                buttonText: "ChatGPT"
                             },
-                            content: "他们最出名的产品便是 Claude",
-                            link: "https://claude.ai/",
-                            buttonText: "Claude"
-                        },
-                        {
-                            title: "智谱清言",
-                            icon: {
-                                url: "/assets/img/icon/zhipu.svg",
+                            {
+                                title: "Anthropic",
+                                icon: {
+                                    url: "/assets/img/icon/anthropic.ico",
+                                },
+                                content: "他们最出名的产品便是 Claude",
+                                link: "https://claude.ai/",
+                                buttonText: "Claude"
                             },
-                            content: "国内 LLM 第一梯队，还有视频模型等",
-                            link: "https://chatglm.cn/main/alltoolsdetail",
-                            buttonText: "ChatGLM"
-                        },
-                        {
-                            title: "月之暗面",
-                            icon: {
-                                url: "/assets/img/icon/moonshot.ico",
-                                noBackshadow: true,
+                            {
+                                title: "智谱清言",
+                                icon: {
+                                    url: "/assets/img/icon/zhipu.svg",
+                                },
+                                content: "国内 LLM 第一梯队，还有视频模型等",
+                                link: "https://chatglm.cn/main/alltoolsdetail",
+                                buttonText: "ChatGLM"
                             },
-                            content: "Kimi 虽然不太聪明，但脑容量大啊",
-                            link: "https://kimi.moonshot.cn/",
-                            buttonText: "Kimi"
-                        },
-                        {
-                            title: "Poe",
-                            icon: {
-                                url: "/assets/img/icon/poe.svg",
-                                noBackshadow: true,
+                            {
+                                title: "月之暗面",
+                                icon: {
+                                    url: "/assets/img/icon/moonshot.ico",
+                                    noBackshadow: true,
+                                },
+                                content: "Kimi 虽然不太聪明，但脑容量大啊",
+                                link: "https://kimi.moonshot.cn/",
+                                buttonText: "Kimi"
                             },
-                            content: "Poe 是一个智能体平台，以使用多家供应商的 AI 模型",
-                            link: "https://poe.com/",
-                            buttonText: "Poe"
-                        },
-                        {
-                            title: "Metaso",
-                            icon: {
-                                url: "/assets/img/icon/metaso.ico",
-                                noBackshadow: true,
+                            {
+                                title: "Poe",
+                                icon: {
+                                    url: "/assets/img/icon/poe.svg",
+                                    noBackshadow: true,
+                                },
+                                content: "Poe 是一个智能体平台，以使用多家供应商的 AI 模型",
+                                link: "https://poe.com/",
+                                buttonText: "Poe"
                             },
-                            iconUrl: "/assets/img/icon/metaso.ico",
-                            content: "面向科研狗的 AI 学术搜索平台，可以进行学术内容总结与问答",
-                            link: "https://metaso.cn",
-                            buttonText: "Metaso"
-                        },
-                        {
-                            title: "Devv",
-                            icon: {
-                                url: "/assets/img/icon/devv.png",
+                            {
+                                title: "Metaso",
+                                icon: {
+                                    url: "/assets/img/icon/metaso.ico",
+                                    noBackshadow: true,
+                                },
+                                iconUrl: "/assets/img/icon/metaso.ico",
+                                content: "面向科研狗的 AI 学术搜索平台，可以进行学术内容总结与问答",
+                                link: "https://metaso.cn",
+                                buttonText: "Metaso"
                             },
-                            content: "面向程序员的 AI 搜索引擎，可以使用多家供应商的 AI 模型",
-                            link: "https://devv.ai/zh",
-                            buttonText: "Devv"
-                        },
-                        {
-                            title: "Perplexity",
-                            icon: {
-                                url: "/assets/img/icon/perplexity.ico",
-                                noBackshadow: true,
+                            {
+                                title: "Devv",
+                                icon: {
+                                    url: "/assets/img/icon/devv.png",
+                                },
+                                content: "面向程序员的 AI 搜索引擎，可以使用多家供应商的 AI 模型",
+                                link: "https://devv.ai/zh",
+                                buttonText: "Devv"
                             },
-                            content: "非常强大的 AI 搜索引擎，可以使用多家供应商的 AI 模型，但多轮对话有点笨……",
-                            link: "https://www.perplexity.ai/",
-                            buttonText: "Perplexity"
-                        }
-                    ]
-                },
-                {
-                    sectionTitle: "LLM 增强",
-                    sectionIcon: "ri-arrow-up-double-line",
-                    content: [
-                        {
-                            title: "Prompt Library",
-                            icon: {
-                                url: "/assets/img/icon/anthropic.ico",
+                            {
+                                title: "Perplexity",
+                                icon: {
+                                    url: "/assets/img/icon/perplexity.ico",
+                                    noBackshadow: true,
+                                },
+                                content: "非常强大的 AI 搜索引擎，可以使用多家供应商的 AI 模型，但多轮对话有点笨……",
+                                link: "https://www.perplexity.ai/",
+                                buttonText: "Perplexity"
+                            }
+                        ]
+                    },
+                    {
+                        sectionTitle: "LLM 增强",
+                        sectionIcon: "ri-arrow-up-double-line",
+                        content: [
+                            {
+                                title: "Prompt Library",
+                                icon: {
+                                    url: "/assets/img/icon/anthropic.ico",
+                                },
+                                content: "Anthropic 提供的 Prompt Library，可以帮助你通过更好的 Prompt 提升 LLM 性能和效率",
+                                link: "https://docs.anthropic.com/en/prompt-library/library",
+                                buttonText: "Prompt Lib"
                             },
-                            content: "Anthropic 提供的 Prompt Library，可以帮助你通过更好的 Prompt 提升 LLM 性能和效率",
-                            link: "https://docs.anthropic.com/en/prompt-library/library",
-                            buttonText: "Prompt Lib"
-                        },
-                        {
-                            title: "Super Prompt",
-                            icon: "ri-github-fill",
-                            content: "一个针对 Claude 优化的万能 Prompt，提升效果非常显著，其他 LLM 也可以使用",
-                            link: "https://github.com/NeoVertex1/SuperPrompt",
-                            buttonText: "Super Prompt"
-                        }
-                    ]
-                },
-                {
-                    sectionTitle: "基于 AI 的工具",
-                    sectionIcon: "ri-hammer-line",
-                    content: [
-                        {
-                            title: "QRBTF",
-                            icon: "ri-qr-code-fill",
-                            content: "一个基于文生图模型的二维码制作工具，挺有意思的",
-                            link: "https://qrbtf.com/zh",
-                            buttonText: "QRBTF"
-                        },
-                        {
-                            title: "Copilot",
-                            icon: "ri-copilot-fill",
-                            content: "GitHub 的 AI 代码助手，可以根据提示帮你编写代码和查找错误，你也可以询问它相关问题",
-                            link: "https://copilot.github.com/",
-                            buttonText: "Copilot 官网"
-                        },
-                        {
-                            title: "CodeGeex",
-                            icon: {
-                                url: "/assets/img/icon/codegeex.png",
-                                noBackshadow: true,
+                            {
+                                title: "Super Prompt",
+                                icon: "ri-github-fill",
+                                content: "一个针对 Claude 优化的万能 Prompt，提升效果非常显著，其他 LLM 也可以使用",
+                                link: "https://github.com/NeoVertex1/SuperPrompt",
+                                buttonText: "Super Prompt"
+                            }
+                        ]
+                    },
+                    {
+                        sectionTitle: "基于 AI 的工具",
+                        sectionIcon: "ri-hammer-line",
+                        content: [
+                            {
+                                title: "QRBTF",
+                                icon: "ri-qr-code-fill",
+                                content: "一个基于文生图模型的二维码制作工具，挺有意思的",
+                                link: "https://qrbtf.com/zh",
+                                buttonText: "QRBTF"
                             },
-                            content: "智谱清言出品的代码助手，算是国内 Copilot 不错的替代品，效果也不错",
-                            link: "https://codegeex.cn/",
-                            buttonText: "CodeGeex 官网"
-                        }
-                    ]
-                }
-            ]
-            const yigesVueAppManager = YigesVueAppManager.getManagerById("yiges-vue-app-tools-ai")
-            yigesVueAppManager?.mountApp({
-                setup() {
-                    return {
-                        ...yigesVueAppManager.defaultSetups,
-                        data,
+                            {
+                                title: "Copilot",
+                                icon: "ri-copilot-fill",
+                                content: "GitHub 的 AI 代码助手，可以根据提示帮你编写代码和查找错误，你也可以询问它相关问题",
+                                link: "https://copilot.github.com/",
+                                buttonText: "Copilot 官网"
+                            },
+                            {
+                                title: "CodeGeex",
+                                icon: {
+                                    url: "/assets/img/icon/codegeex.png",
+                                    noBackshadow: true,
+                                },
+                                content: "智谱清言出品的代码助手，算是国内 Copilot 不错的替代品，效果也不错",
+                                link: "https://codegeex.cn/",
+                                buttonText: "CodeGeex 官网"
+                            }
+                        ]
                     }
+                ];
+                return {
+                    ...YigesVueAppManager.getDefaults(),
+                    data,
                 }
-            })
+            }
         });
-    }, {once: true});
+    });
 </script>
 

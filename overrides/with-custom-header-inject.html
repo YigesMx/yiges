@@ -10,6 +10,34 @@
 
 {{ super() }}
 
+<script>
+(()=>{
+    window.YigesEventManager = (function() {
+        const events = {};
+    
+        return {
+            events,
+            subscribe: function(event, id, callback) {
+                if (!events[event]) {
+                    events[event] = {};
+                }
+                if (!events[event][id]) {
+                    events[event][id] = callback;
+                    document.addEventListener(event, callback);
+                }
+            },
+            publish: function(event) {
+                if (!events[event]) {
+                    return;
+                }
+                const eventObj = new CustomEvent(event);
+                document.dispatchEvent(eventObj);
+            }
+        };
+    })();
+})();
+</script>
+
 <!-- 尝试向 cnest 元素注入 canvas-nest -->
 <script type="module">
     import {createCanvasNest} from '/assets/js/canvas/canvas-nest.js';

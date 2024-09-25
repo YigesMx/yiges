@@ -1,12 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     const YigesVueAppManager = (function() {
-        let instances = {};
-    
-        function createInstance(appTagID) {
-            const targetElement = document.getElementById(appTagID);
-            if (!targetElement) {
-                return undefined;
-            }
+        const mountedApps = {};
+
+        function getDefaults() {
 
             const body = document.querySelector('body');
 
@@ -62,58 +58,52 @@ document.addEventListener('DOMContentLoaded', function () {
                 attributeFilter: ['data-md-color-media'],
             });
 
-            return new Object({
-                appTagID: appTagID,
-                app: null,
-                defaultSetups: {
-                    theme: theme,
-                    themeOverrides: themeOverrides,
-                    window: window,
-                    Vue: Vue,
-                },
-                mountApp: function(App) {
-                    const app = Vue.createApp(App);
-                    app.use(naive);
-                    app.mount(`#${this.appTagID}`);
-                    this.app = app;
-                    return app;
-                }
-            });
+            return {
+                theme: theme,
+                themeOverrides: themeOverrides,
+                window: window,
+                Vue: Vue,
+            };
         }
-    
+
         return {
-            instances,
-            eventTarget : new EventTarget(),
-            getManagerById(appTagID) {
-                if (!instances[appTagID]) {
-                    instances[appTagID] = createInstance(appTagID);
+            mountedApps,
+            getDefaults: getDefaults,
+            mountApp: function(appTagID, App) {
+                const targetElement = document.getElementById(appTagID);
+                if (!targetElement) {
+                    return;
                 }
-                return instances[appTagID];
+
+                if (mountedApps[appTagID]) {
+                    return mountedApps[appTagID];
+                }
+
+                const app = Vue.createApp(App);
+                app.use(naive);
+                app.mount(`#${appTagID}`);
+
+                mountedApps[appTagID] = app;
+                return app;
             },
-            deleteManagerById(appTagID) {
-                if (instances[appTagID]) {
-                    delete instances[appTagID];
-                    instances[appTagID] = undefined;
+            unmountAllApps: function() {
+                for (const key in mountedApps) {
+                    if(!mountedApps[key]) continue;
+                    mountedApps[key].unmount();
+                    delete mountedApps[key];
+                    mountedApps[key] = undefined;
                 }
             }
         };
     })();
     
     window.YigesVueAppManager = YigesVueAppManager;
-    const readyEvent = new Event('YigesVueAppManagerReady');
-    document.dispatchEvent(readyEvent);
 
     document$.subscribe(({ body }) => {
-        //unmount all vue apps
-        for (const key in YigesVueAppManager.instances) {
-            if(!YigesVueAppManager.instances[key]) continue;
-            YigesVueAppManager.instances[key].app.unmount();
-            YigesVueAppManager.deleteManagerById(key);
-        }
-
-        const reloadEvent = new Event('YigesVueAppManagerReload');
-        document.dispatchEvent(reloadEvent);
+        YigesVueAppManager.unmountAllApps();
+        // const reloadEvent = new Event('YigesVueAppManagerReload');
+        // document.dispatchEvent(reloadEvent);
+        YigesEventManager.publish('YigesVueAppManagerReload');
     });
 
 });
-
