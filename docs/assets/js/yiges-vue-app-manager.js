@@ -58,42 +58,73 @@ document.addEventListener('DOMContentLoaded', function () {
                 attributeFilter: ['data-md-color-media'],
             });
 
+            function openLink(url) {
+                if(url.startsWith('http')){
+                    window.open(url, '_blank');
+                } else if (url.startsWith('/') || url.startsWith('#')) {
+                    // window.location.assign(url);
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = url;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                }
+            }
+
             return {
                 theme: theme,
                 themeOverrides: themeOverrides,
                 window: window,
                 Vue: Vue,
+                utils: {
+                    openLink: openLink,
+                },
             };
         }
+
+        function mountApp(appTagID, App) {
+            const targetElement = document.getElementById(appTagID);
+            if (!targetElement) {
+                return;
+            }
+
+            if (mountedApps[appTagID]) {
+                return mountedApps[appTagID];
+            }
+
+            const app = Vue.createApp(App);
+            app.use(naive);
+            app.mount(`#${appTagID}`);
+
+            mountedApps[appTagID] = app;
+            return app;
+        }
+
+        function unmountApp(appTagID) {
+            if (mountedApps[appTagID]) {
+                mountedApps[appTagID].unmount();
+                delete mountedApps[appTagID];
+                mountedApps[appTagID] = undefined;
+            }
+        }
+
+        function unmountAllApps() {
+            for (const key in mountedApps) {
+                unmountApp(key);
+            }
+        }
+
+        function getRemixIconRender(icon) {
+            return () => Vue.h("i", {class: [icon]});
+        };
 
         return {
             mountedApps,
             getDefaults: getDefaults,
-            mountApp: function(appTagID, App) {
-                const targetElement = document.getElementById(appTagID);
-                if (!targetElement) {
-                    return;
-                }
-
-                if (mountedApps[appTagID]) {
-                    return mountedApps[appTagID];
-                }
-
-                const app = Vue.createApp(App);
-                app.use(naive);
-                app.mount(`#${appTagID}`);
-
-                mountedApps[appTagID] = app;
-                return app;
-            },
-            unmountAllApps: function() {
-                for (const key in mountedApps) {
-                    if(!mountedApps[key]) continue;
-                    mountedApps[key].unmount();
-                    delete mountedApps[key];
-                    mountedApps[key] = undefined;
-                }
-            }
+            mountApp: mountApp,
+            unmountAllApps: unmountAllApps,
+            getRemixIconRender: getRemixIconRender,
         };
     })();
     
@@ -101,8 +132,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document$.subscribe(({ body }) => {
         YigesVueAppManager.unmountAllApps();
-        // const reloadEvent = new Event('YigesVueAppManagerReload');
-        // document.dispatchEvent(reloadEvent);
         YigesEventManager.publish('YigesVueAppManagerReload');
     });
 

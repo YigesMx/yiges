@@ -5,31 +5,63 @@
             <i :class="[section.sectionIcon]"></i> {{ section.sectionTitle }}
         </n-tag>
         <div class="yiges-horizontal-cards">
-            <n-card v-for="item in section.content" class="yiges-horizontal-card" hoverable>
-                <template #header>
-                    <n-h4 style="margin: 0;" prefix="bar" align-text>
-                        <div v-if="item.icon">
-                            <i v-if="typeof item.icon === 'string'" :class="[item.icon]"></i>
-                            <img v-else v-bind:src="item.icon.url" style="display:inline-block" :class="{'no-backshadow': item.icon.noBackshadow, 'no-radius': item.icon.noRadius}"/>
-                            &thinsp;
+            <div v-for="item in section.content" class="yiges-horizontal-card">
+                <n-popover :trigger="((item.card?.popover)||(item.dropdownList?.length>0))?'hover':'none'" placement="bottom" width="trigger">
+                    <template #trigger>
+                        <n-card hoverable @click="utils.openLink(item.card?.link)" :style="item.card ? {cursor: 'pointer'} : {}">
+                            <template #header>
+                                <n-h4 style="margin: 0;" prefix="bar" align-text>
+                                    <div v-if="item.icon">
+                                        <i v-if="typeof item.icon === 'string'" :class="[item.icon]"></i>
+                                        <img v-else v-bind:src="item.icon.url" style="display:inline-block" :class="{'no-backshadow': item.icon.noBackshadow, 'no-radius': item.icon.noRadius}"/>
+                                        &thinsp;
+                                    </div>
+                                    <div v-if="typeof item.title === 'function'">
+                                        <component :is="item.title"></component>
+                                    </div>
+                                    <div v-else>
+                                        {{ item.title }}
+                                    </div>
+                                </n-h4>
+                            </template>
+                            <template #header-extra v-if="item.card?.link">
+                                <i class="ri-external-link-line"></i>
+                            </template>
+                            <div class="yiges-horizontal-card-content">
+                                {{ item.content }}
+                            </div>
+                            <template #footer>
+                                <n-button @click="window.open(item.button.link, '_blank')" secondary type="primary">
+                                    {{ item.button.text }}&nbsp;
+                                    <span v-if="item.button.icon">
+                                        <i :class="[item.button.icon]"></i>
+                                    </span>
+                                    <span v-else>
+                                        <i class="ri-arrow-right-line"></i>
+                                    </span>
+                                </n-button>
+                            </template>
+                        </n-card>
+                    </template>
+                    <div  v-if="item.card?.popover" style="text-align: center; padding: 5px 0 5px 0;">
+                        <n-text strong>
+                            {{item.card?.popover}}
+                        </n-text>
+                    </div>
+                    <div v-if="item.dropdownList?.length>0">
+                        <div v-for="dropdownItem in item.dropdownList" style="padding: 5px 0 5px 0;">
+                            <n-button secondary block @click="window.open(dropdownItem.link, '_blank')">
+                                <template #icon v-if="dropdownItem.icon">
+                                    <n-icon>
+                                        <i :class="[dropdownItem.icon]"></i>
+                                    </n-icon>
+                                </template>
+                                {{ dropdownItem.text }}
+                            </n-button>
                         </div>
-                        <div v-if="typeof item.title === 'function'">
-                            <component :is="item.title"></component>
-                        </div>
-                        <div v-else>
-                            {{ item.title }}
-                        </div>
-                    </n-h4>
-                </template>
-                <div class="yiges-horizontal-card-content">
-                    {{ item.content }}
-                </div>
-                <template #footer>
-                    <n-button @click="window.open(item.link, '_blank')" secondary type="primary">
-                        {{ item.buttonText }}&thinsp;<i class="ri-arrow-right-line"></i>
-                    </n-button>
-                </template>
-            </n-card>
+                    </div>
+                </n-popover>
+            </div>
         </div>
     </div>
 </n-config-provider>
