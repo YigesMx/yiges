@@ -6,8 +6,6 @@ tags:
     - 资源
 ---
 
-<!-- ---8<--- "vueApps/utils.md:auto-reload-yiges-vue-apps" -->
-
 
 # 推荐一些工具和项目
 
@@ -26,6 +24,8 @@ tags:
 ## 开发与工具
 
 ### Dev
+
+---8<--- "vueApps/工具和项目集合/dev.html"
 
 | :material-archive: 合集             | :material-apps: 应用/项目 | :material-information-box: 站内介绍 |
 | --------------------------------- | ------------------------- | ----------------------------------- |

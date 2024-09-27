@@ -6,9 +6,9 @@
         </n-tag>
         <div class="yiges-horizontal-cards">
             <div v-for="item in section.content" class="yiges-horizontal-card">
-                <n-popover :trigger="((item.card?.popover)||(item.dropdownList?.length>0))?'hover':'none'" placement="bottom" width="trigger">
+                <n-popover :trigger="(item.popover)?'hover':'none'" placement="right-start" style="padding:5px">
                     <template #trigger>
-                        <n-card hoverable @click="utils.openLink(item.card?.link)" :style="item.card ? {cursor: 'pointer'} : {}">
+                        <n-card hoverable>
                             <template #header>
                                 <n-h4 style="margin: 0;" prefix="bar" align-text>
                                     <div v-if="item.icon">
@@ -24,14 +24,14 @@
                                     </div>
                                 </n-h4>
                             </template>
-                            <template #header-extra v-if="item.card?.link">
-                                <i class="ri-external-link-line"></i>
+                            <template #header-extra v-if="item.popover">
+                                <i class="ri-more-fill"></i>
                             </template>
                             <div class="yiges-horizontal-card-content">
                                 {{ item.content }}
                             </div>
                             <template #footer>
-                                <n-button @click="window.open(item.button.link, '_blank')" secondary type="primary">
+                                <n-button @click.stop="utils.openLink(item.button.link)" secondary type="primary">
                                     {{ item.button.text }}&nbsp;
                                     <span v-if="item.button.icon">
                                         <i :class="[item.button.icon]"></i>
@@ -43,20 +43,23 @@
                             </template>
                         </n-card>
                     </template>
-                    <div  v-if="item.card?.popover" style="text-align: center; padding: 5px 0 5px 0;">
-                        <n-text strong>
-                            {{item.card?.popover}}
+                    <div style="text-align: center; padding: 5px 0 5px 0; min-width: 128px;">
+                        <n-text strong v-if="item.popover?.title">
+                            {{item.popover?.title}}
+                        </n-text>
+                        <n-text strong v-else>
+                            更多
                         </n-text>
                     </div>
-                    <div v-if="item.dropdownList?.length>0">
-                        <div v-for="dropdownItem in item.dropdownList" style="padding: 5px 0 5px 0;">
-                            <n-button secondary block @click="window.open(dropdownItem.link, '_blank')">
-                                <template #icon v-if="dropdownItem.icon">
+                    <div v-if="item.popover?.list?.length>0">
+                        <div v-for="popoverItem in item.popover?.list" style="padding: 5px 0 0px 0;">
+                            <n-button secondary block @click.stop="utils.openLink(popoverItem.link)">
+                                <template #icon v-if="popoverItem.icon">
                                     <n-icon>
-                                        <i :class="[dropdownItem.icon]"></i>
+                                        <i :class="[popoverItem.icon]"></i>
                                     </n-icon>
                                 </template>
-                                {{ dropdownItem.text }}
+                                {{ popoverItem.text }}
                             </n-button>
                         </div>
                     </div>
