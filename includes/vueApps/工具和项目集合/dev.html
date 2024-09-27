@@ -1,0 +1,56 @@
+<div id="yiges-vue-app-tools-dev">
+---8<--- "vueApps/yiges-horizontal-cards.html"
+</div>
+
+<script>
+    YigesEventManager.subscribe("YigesVueAppManagerReload", "yiges-vue-app-tools-dev", ()=>{
+        YigesVueAppManager.mountApp("yiges-vue-app-tools-dev",{
+            setup() {
+                const data = [
+                    {
+                        sectionTitle: "Shell 工具",
+                        sectionIcon: "ri-terminal-box-line",
+                        content: [
+                            {
+                                title: "ShellGPT",
+                                icon: "ri-terminal-line",
+                                content: "一个基于 LLM 的 CLI 工具，可以进行对话、提问、shell 命令生成和执行等",
+                                button: {
+                                    link: "https://github.com/TheR1D/shell_gpt",
+                                    text: "Repo"
+                                }
+                            },
+                            {
+                                title: "TL;DR",
+                                icon: "ri-terminal-line",
+                                content: "一个命令行工具，可以查看各种命令的简短用法，也有 Web 界面",
+                                button: {
+                                    link: "https://github.com/tldr-pages/tldr",
+                                    text: "Repo"
+                                },
+                                popover: {
+                                    list: [
+                                        {
+                                            text: "Web 应用",
+                                            link: "https://tldr.inbrowser.app/",
+                                            icon: "ri-global-line"
+                                        },
+                                        {
+                                            text: "站内笔记",
+                                            link: "/Harvest/工具和项目/2024-09-26-tldr/",
+                                            icon: "ri-edit-2-fill"
+                                        },
+                                    ]
+                                }
+                            },
+                        ]
+                    },
+                ];
+                return {
+                    ...YigesVueAppManager.getDefaults(),
+                    data,
+                }
+            }
+        });
+    });
+</script>
