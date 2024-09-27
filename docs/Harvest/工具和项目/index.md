@@ -27,11 +27,6 @@ tags:
 
 ---8<--- "vueApps/工具和项目集合/dev.html"
 
-| :material-archive: 合集             | :material-apps: 应用/项目 | :material-information-box: 站内介绍 |
-| --------------------------------- | ------------------------- | ----------------------------------- |
-| :material-web: Web 应用 |                           |                                     |
-| :octicons-terminal-16: Shell 工具 |  sgpt tldr                         |                                     |
-
 ### 系统增强
 
 | :material-archive: 合集             | :material-apps: 应用/项目 | :material-information-box: 站内介绍 |
@@ -50,3 +45,4 @@ tags:
 | :material-archive: 合集          | :material-apps: 应用/项目 | :material-information-box: 站内介绍 |
 | ------------------------------- | ------------------------- | ----------------------------------- |
 | :material-palette-outline: 色彩工具 |                           |                                     |
+

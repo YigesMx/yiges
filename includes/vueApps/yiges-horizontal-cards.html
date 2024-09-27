@@ -6,7 +6,14 @@
         </n-tag>
         <div class="yiges-horizontal-cards">
             <div v-for="item in section.content" class="yiges-horizontal-card">
-                <n-popover :trigger="(item.popover)?'hover':'none'" placement="right-start" style="padding:5px">
+                <n-popover 
+                    :trigger="(item.popover)?'hover':'none'"
+                    placement="right-start"
+                    
+                    style="top: 18px; left: -24px;"
+                    content-style="padding: 5px 5px 5px 5px;"
+                    header-style="padding: 8px 5px 6px 5px;"
+                >
                     <template #trigger>
                         <n-card hoverable>
                             <template #header>
@@ -43,17 +50,19 @@
                             </template>
                         </n-card>
                     </template>
-                    <div style="text-align: center; padding: 5px 0 5px 0; min-width: 128px;">
-                        <n-text strong v-if="item.popover?.title">
-                            {{item.popover?.title}}
-                        </n-text>
-                        <n-text strong v-else>
-                            更多
-                        </n-text>
-                    </div>
+                    <template #header>
+                        <div style="text-align: center; min-width: 128px;">
+                            <n-text strong v-if="item.popover?.title">
+                                {{item.popover?.title}}
+                            </n-text>
+                            <n-text strong v-else>
+                                更多
+                            </n-text>
+                        </div>
+                    </template>
                     <div v-if="item.popover?.list?.length>0">
-                        <div v-for="popoverItem in item.popover?.list" style="padding: 5px 0 0px 0;">
-                            <n-button secondary block @click.stop="utils.openLink(popoverItem.link)">
+                        <div v-for="popoverItem in item.popover?.list">
+                            <n-button quaternary block @click.stop="utils.openLink(popoverItem.link)">
                                 <template #icon v-if="popoverItem.icon">
                                     <n-icon>
                                         <i :class="[popoverItem.icon]"></i>
