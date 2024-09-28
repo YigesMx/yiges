@@ -7,7 +7,8 @@
         <div class="yiges-horizontal-cards">
             <div v-for="item in section.content" class="yiges-horizontal-card">
                 <n-popover 
-                    :trigger="(item.popover)?'hover':'none'"
+                    :disabled="(item.popover)?false:true"
+                    trigger="hover"
                     placement="right-start"
                     
                     style="top: 18px;"

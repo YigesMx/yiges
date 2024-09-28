@@ -29,33 +29,35 @@ nav:
     - Ark:
       - Domain/Ark/index.md
       - AI:
-        - Domain/Ark/AI/2024-02-03-ai-fundamentals.md
         - Domain/Ark/AI/2024-05-01-introduction-to-transformer.md
+        - Domain/Ark/AI/2024-02-03-ai-fundamentals.md
       - Dev:
-        - Domain/Ark/Dev/2022-09-25-different-links.md
         - Domain/Ark/Dev/2022-09-26-git.md
+        - Domain/Ark/Dev/2022-09-25-different-links.md
       - Research:
         - Domain/Ark/Research/2022-09-25-matplotlib.md
     - Halo:
       - Domain/Halo/index.md
   - 致远:
     - Reach/index.md
-    - 折腾实录:
-      - Reach/折腾实录/2022-09-25-canves-nest-js.md
-      - Reach/折腾实录/2022-10-27-Listary-and-fav-export.md
-      - Reach/折腾实录/2024-09-11-deploy-searxng.md
-      - Reach/折腾实录/2024-09-19-vue-in-mkdocs.md
-      - Reach/折腾实录/2024-09-19-RevolverMaps.md
-      - Reach/折腾实录/2024-09-23-deploy-syncthing.md
+    - 没事儿爱折腾:
+      - Reach/没事儿爱折腾/2024-09-23-deploy-syncthing.md
+      - Reach/没事儿爱折腾/2024-09-19-RevolverMaps.md
+      - Reach/没事儿爱折腾/2024-09-19-vue-in-mkdocs.md
+      - Reach/没事儿爱折腾/2024-09-11-deploy-searxng.md
+      - Reach/没事儿爱折腾/2022-10-27-Listary-and-fav-export.md
+      - Reach/没事儿爱折腾/2022-09-25-canves-nest-js.md
+    - 干活儿也折腾:
+      - Reach/干活儿也折腾/2024-09-20-pandoc-md-latex.md
+
   - 丰饶:
     - Harvest/index.md
     - 工具和项目:
       - Harvest/工具和项目/index.md
-      - Harvest/工具和项目/2024-09-15-mac-quicklook-plugin.md
-      - Harvest/工具和项目/2024-09-15-windows-quicklook.md
-      - Harvest/工具和项目/2024-09-20-pandoc-md-latex.md
-      - Harvest/工具和项目/2024-09-23-sync-tools.md
       - Harvest/工具和项目/2024-09-26-tldr.md
+      - Harvest/工具和项目/2024-09-23-sync-tools.md
+      - Harvest/工具和项目/2024-09-15-windows-quicklook.md
+      - Harvest/工具和项目/2024-09-15-mac-quicklook-plugin.md
     - 影音资源:
       - Harvest/影音/常用资源站.md
       - Harvest/影音/我的歌单.md

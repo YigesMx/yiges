@@ -1,0 +1,33 @@
+<div id="yiges-vue-app-tools-creative">
+---8<--- "vueApps/yiges-horizontal-cards.html"
+</div>
+
+<script>
+    YigesEventManager.subscribe("YigesVueAppManagerReload", "yiges-vue-app-tools-creative", ()=>{
+        YigesVueAppManager.mountApp("yiges-vue-app-tools-creative",{
+            setup() {
+                const data = [
+                    {
+                        sectionTitle: "色彩",
+                        sectionIcon: "ri-terminal-box-line",
+                        content: [
+                            {
+                                title: "Flat UI Colors",
+                                icon: "ri-terminal-line",
+                                content: "一个命令行工具，可以查看各种命令的简短用法，也有 Web 界面",
+                                button: {
+                                    link: "https://flatuicolors.com/",
+                                    text: "Repo"
+                                }
+                            },
+                        ]
+                    },
+                ];
+                return {
+                    ...YigesVueAppManager.getDefaults(),
+                    data,
+                }
+            }
+        });
+    });
+</script>

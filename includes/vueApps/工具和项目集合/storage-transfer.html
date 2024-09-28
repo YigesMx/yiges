@@ -1,0 +1,66 @@
+<div id="yiges-vue-app-tools-storage-transfer">
+---8<--- "vueApps/yiges-horizontal-cards.html"
+</div>
+
+<script>
+    YigesEventManager.subscribe("YigesVueAppManagerReload", "yiges-vue-app-tools-storage-transfer", ()=>{
+        YigesVueAppManager.mountApp("yiges-vue-app-tools-storage-transfer",{
+            setup() {
+                const data = [
+                    {
+                        sectionTitle: "下载",
+                        sectionIcon: "ri-terminal-box-line",
+                        content: [
+                            {
+                                title: "Motrix",
+                                icon: "ri-terminal-line",
+                                content: "一个命令行工具，可以查看各种命令的简短用法，也有 Web 界面",
+                                button: {
+                                    link: "https://github.com/tldr-pages/tldr",
+                                    text: "Repo"
+                                }
+                            },
+                            {
+                                title: "IDM",
+                                icon: "ri-terminal-line",
+                                content: "一个命令行工具，可以查看各种命令的简短用法，也有 Web 界面",
+                                button: {
+                                    link: "https://github.com/tldr-pages/tldr",
+                                    text: "Repo"
+                                }
+                            },
+                        ]
+                    },
+                    {
+                        sectionTitle: "同步",
+                        sectionIcon: "ri-terminal-box-line",
+                        content: [
+                            {
+                                title: "Resilio Sync",
+                                icon: "ri-terminal-line",
+                                content: "一个命令行工具，可以查看各种命令的简短用法，也有 Web 界面",
+                                button: {
+                                    link: "https://github.com/tldr-pages/tldr",
+                                    text: "Repo"
+                                },
+                            },
+                            {
+                                title: "Syncthing",
+                                icon: "ri-terminal-line",
+                                content: "一个命令行工具，可以查看各种命令的简短用法，也有 Web 界面",
+                                button: {
+                                    link: "https://github.com/tldr-pages/tldr",
+                                    text: "Repo"
+                                },
+                            },
+                        ]
+                    },
+                ];
+                return {
+                    ...YigesVueAppManager.getDefaults(),
+                    data,
+                }
+            }
+        });
+    });
+</script>

@@ -21,28 +21,20 @@ tags:
 
 ---8<--- "vueApps/工具和项目集合/research.html"
 
-## 开发与工具
+## 效率与工具
 
 ### Dev
 
 ---8<--- "vueApps/工具和项目集合/dev.html"
 
-### 系统增强
+### 系统功能增强
 
-| :material-archive: 合集             | :material-apps: 应用/项目 | :material-information-box: 站内介绍 |
-| --------------------------------- | ------------------------- | ----------------------------------- |
-| :simple-macos: MacOS      |                           |                                     |
-| :fontawesome-brands-windows: Windows    |                           |                                     |
+---8<--- "vueApps/工具和项目集合/system-function.html"
 
-### 网络与传输
+### 存储与传输
 
-| :material-archive: 合集             | :material-apps: 应用/项目 | :material-information-box: 站内介绍 |
-| --------------------------------- | ------------------------- | ----------------------------------- |
-| :material-download: 下载      |      IDM Motrix                      |                                     |
+---8<--- "vueApps/工具和项目集合/storage-transfer.html"
 
 ## 创意与设计
 
-| :material-archive: 合集          | :material-apps: 应用/项目 | :material-information-box: 站内介绍 |
-| ------------------------------- | ------------------------- | ----------------------------------- |
-| :material-palette-outline: 色彩工具 |                           |                                     |
-
+---8<--- "vueApps/工具和项目集合/creative.html"

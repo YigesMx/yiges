@@ -1,23 +1,26 @@
-<div id="yiges-vue-app-tools-dev">
+<div id="yiges-vue-app-tools-system-function">
 ---8<--- "vueApps/yiges-horizontal-cards.html"
 </div>
 
 <script>
-    YigesEventManager.subscribe("YigesVueAppManagerReload", "yiges-vue-app-tools-dev", ()=>{
-        YigesVueAppManager.mountApp("yiges-vue-app-tools-dev",{
+    YigesEventManager.subscribe("YigesVueAppManagerReload", "yiges-vue-app-tools-system-function", ()=>{
+        YigesVueAppManager.mountApp("yiges-vue-app-tools-system-function",{
             setup() {
                 const data = [
                     {
-                        sectionTitle: "Shell 工具",
+                        sectionTitle: "MacOS",
                         sectionIcon: "ri-terminal-box-line",
                         content: [
                             {
-                                title: "ShellGPT",
-                                icon: "ri-terminal-line",
-                                content: "一个基于 LLM 的 CLI 工具，可以进行对话、提问、shell 命令生成和执行等",
+                                title: "Alfred",
+                                icon: {
+                                    url: "/assets/img/icon/alfred.png",
+                                    noBackshadow: true,
+                                },
+                                content: "一个集成了很多功能的系统增强工具和启动器，可以看做是 Spotlight 的增强版和强自定义版，配合上 Workflow 和脚本运行，可以实现几乎任何你想实现的功能",
                                 button: {
-                                    link: "https://github.com/TheR1D/shell_gpt",
-                                    text: "Repo"
+                                    link: "https://www.alfredapp.com/",
+                                    text: "Alfred 官网"
                                 },
                                 popover: {
                                     list: [
@@ -29,8 +32,14 @@
                                     ]
                                 }
                             },
+                        ]
+                    },
+                    {
+                        sectionTitle: "Windows",
+                        sectionIcon: "ri-terminal-box-line",
+                        content: [
                             {
-                                title: "TL;DR",
+                                title: "Listary",
                                 icon: "ri-terminal-line",
                                 content: "一个命令行工具，可以查看各种命令的简短用法，也有 Web 界面",
                                 button: {
