@@ -13,20 +13,39 @@
                         content: [
                             {
                                 title: "Motrix",
-                                icon: "ri-terminal-line",
-                                content: "一个命令行工具，可以查看各种命令的简短用法，也有 Web 界面",
+                                icon: {
+                                    url: "/assets/img/icon/motrix.png",
+                                    noBackshadow: true,
+                                    noRadius: true,
+                                },
+                                content: "一个下载工具，支持多线程下载，支持 HTTP, FTP, BT, 磁力链接等",
                                 button: {
-                                    link: "https://github.com/tldr-pages/tldr",
-                                    text: "Repo"
+                                    link: "https://motrix.app/",
+                                    text: "Motrix 官网"
                                 }
                             },
                             {
                                 title: "IDM",
-                                icon: "ri-terminal-line",
-                                content: "一个命令行工具，可以查看各种命令的简短用法，也有 Web 界面",
+                                icon: {
+                                    url: "/assets/img/icon/idm.png",
+                                    noBackshadow: true,
+                                },
+                                content: "一个下载工具，支持捕捉浏览器下载，并且支持非常好用的多线程下载，除了界面古老一点功能非常全面，但不支持 macOS",
                                 button: {
-                                    link: "https://github.com/tldr-pages/tldr",
-                                    text: "Repo"
+                                    link: "https://www.internetdownloadmanager.com/",
+                                    text: "IDM 官网"
+                                }
+                            },
+                            {
+                                title: "NDM",
+                                icon: {
+                                    url: "/assets/img/icon/ndm.png",
+                                    noBackshadow: true,
+                                },
+                                content: "一个免费的 IDM 替代品，并且跨平台支持 macOS 和 Win，功能稍显简洁，但是足够用了。",
+                                button: {
+                                    link: "https://www.neatdownloadmanager.com/index.php/en/",
+                                    text: "NDM 官网"
                                 }
                             },
                         ]
@@ -37,21 +56,45 @@
                         content: [
                             {
                                 title: "Resilio Sync",
-                                icon: "ri-terminal-line",
-                                content: "一个命令行工具，可以查看各种命令的简短用法，也有 Web 界面",
-                                button: {
-                                    link: "https://github.com/tldr-pages/tldr",
-                                    text: "Repo"
+                                icon: {
+                                    url: "/assets/img/icon/resilio-sync.svg",
+                                    noBackshadow: true,
                                 },
+                                content: "一个跨平台的 P2P 的同步工具，可以同步任何东西，可用作备份工具和共享工具",
+                                button: {
+                                    link: "https://www.resilio.com/sync/",
+                                    text: "Resilio Sync 官网"
+                                },
+                                popover: {
+                                    list: [
+                                        {
+                                            text: "站内介绍",
+                                            link: "/Harvest/工具和项目/2024-09-23-sync-tools",
+                                            icon: "ri-information-line"
+                                        },
+                                    ]
+                                }
                             },
                             {
                                 title: "Syncthing",
-                                icon: "ri-terminal-line",
-                                content: "一个命令行工具，可以查看各种命令的简短用法，也有 Web 界面",
-                                button: {
-                                    link: "https://github.com/tldr-pages/tldr",
-                                    text: "Repo"
+                                icon: {
+                                    url: "/assets/img/icon/syncthing.png",
+                                    noBackshadow: true,
                                 },
+                                content: "Resilio Sync 的开源替代品，也是一个跨平台的 P2P 的同步工具，但没有部分同步等高级功能，但作为一个全量同步备份的软件已经足够",
+                                button: {
+                                    link: "https://syncthing.net/",
+                                    text: "Syncthing 官网"
+                                },
+                                popover: {
+                                    list: [
+                                        {
+                                            text: "站内介绍",
+                                            link: "/Harvest/工具和项目/2024-09-23-sync-tools",
+                                            icon: "ri-information-line"
+                                        },
+                                    ]
+                                }
                             },
                         ]
                     },
