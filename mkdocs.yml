@@ -19,6 +19,10 @@ copyright: >
 repo_url: https://github.com/YigesMx/yiges
 edit_uri: edit/main/docs/
 
+validation:
+  absolute_links: ignore
+  unrecognized_links: ignore
+
 # ========== Navigation ==========
 nav:
   - index.md
@@ -55,6 +59,7 @@ nav:
     - Harvest/index.md
     - 工具和项目:
       - Harvest/工具和项目/index.md
+      - Harvest/工具和项目/2024-10-12-typst.md
       - Harvest/工具和项目/2024-09-28-listary.md
       - Harvest/工具和项目/2024-09-28-alfred.md
       - Harvest/工具和项目/2024-09-28-shell-gpt.md

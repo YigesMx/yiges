@@ -17,7 +17,7 @@ tags:
 
 ---8<--- "vueApps/工具和项目集合/ai.html"
 
-### 科研效率
+### 科研
 
 ---8<--- "vueApps/工具和项目集合/research.html"
 
