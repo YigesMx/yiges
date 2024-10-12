@@ -20,7 +20,7 @@ repo_url: https://github.com/YigesMx/yiges
 edit_uri: edit/main/docs/
 
 validation:
-  absolute_links: ignore
+  # absolute_links: ignore
   unrecognized_links: ignore
 
 # ========== Navigation ==========
@@ -289,7 +289,7 @@ markdown_extensions:
   # === 文档结构增强 ===
   # 目录
   - toc: 
-      permalink: true
+      permalink: false
   # 片段，详见 https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets:
       base_path: 

@@ -9,7 +9,7 @@ tags:
 
 # 通过 Pandoc 将 Markdown 转换为 LaTeX 和 pdf
 
-在 [Pandoc 文档转换](/Harvest/工具和项目/2024-09-20-pandoc) 中，我们介绍了 Pandoc 这个工具，并提到我认为 Pandoc 最适合用来将 Markdown 文档转换为 Latex、Docx、Typst 等格式，进而导出 PDF。多余的分析和内容这里就不再赘述了，可以自行阅读。
+在 [Pandoc 文档转换](../../Harvest/工具和项目/2024-09-20-pandoc.md) 中，我们介绍了 Pandoc 这个工具，并提到我认为 Pandoc 最适合用来将 Markdown 文档转换为 Latex、Docx、Typst 等格式，进而导出 PDF。多余的分析和内容这里就不再赘述了，可以自行阅读。
 
 在这里，我们将根据我的主要使用场景，介绍如何使用 Pandoc 将 Markdown 文档转换为 LaTeX 和 pdf 格式。并且讲解一些常用的参数，如何自定义模板、引用、部分样式等。
 
