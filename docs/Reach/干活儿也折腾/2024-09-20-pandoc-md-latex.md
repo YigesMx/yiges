@@ -13,9 +13,9 @@ tags:
 
 在这里，我们将根据我的主要使用场景，介绍如何使用 Pandoc 将 Markdown 文档转换为 LaTeX 和 pdf 格式。并且讲解一些常用的参数，如何自定义模板、引用、部分样式等。
 
-首先说明一点，Pandoc 本身并不支持直接将 Markdown 转换为 pdf，而是（在默认不指定 pdf 引擎的情况下）先将 Markdown 转换为 LaTeX，然后再将 LaTeX 转换为 pdf。虽然 Pandoc 也可以[指定其他 pdf 生成引擎](https://pandoc.org/MANUAL.html#option--pdf-engine)，但是这里我们主要还是以 Latex 为中转格式。
+首先说明一点，Pandoc 本身并不支持直接将 Markdown 转换为 pdf，而是（在默认不指定 pdf 引擎的情况下）先将 Markdown 转换为 LaTeX，然后再将 LaTeX 转换为 pdf。虽然 Pandoc 也可以[指定其他 pdf 生成引擎](https://pandoc.org/MANUAL.html#option--pdf-engine)，但是这里我们主要还是以 LaTeX 为中转格式。
 
-这也意味着，只要你是使用默认的引擎或是自定义的 Latex 引擎将 Markdown 转换为 pdf，那么和你先转换为 Latex 再转换为 pdf 是一样的，也就是说，如果你需要得到 latex 文件，或在生成的 Latex 文件中进行进一步的修改再生成 pdf，那么就可以先直接转换为 Latex 文件。以下就直接以转换为 pdf 为主要内容介绍了。
+这也意味着，只要你是使用默认的引擎或是自定义的 LaTeX 引擎将 Markdown 转换为 pdf，那么和你先转换为 LaTeX 再转换为 pdf 是一样的，也就是说，如果你需要得到 latex 文件，或在生成的 LaTeX 文件中进行进一步的修改再生成 pdf，那么就可以先直接转换为 LaTeX 文件。以下就直接以转换为 pdf 为主要内容介绍了。
 
 ## 基本转换
 
