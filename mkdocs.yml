@@ -45,8 +45,9 @@ nav:
   - 致远:
     - Reach/index.md
     - 没事儿爱折腾:
+      - Reach/没事儿爱折腾/2024-10-26-zabbix.md
       - Reach/没事儿爱折腾/2024-09-28-alfred-workflow.md
-      - Reach/没事儿爱折腾/2024-09-23-deploy-syncthing.md
+      - Reach/没事儿爱折腾/2024-09-23-deploy-synctools.md
       - Reach/没事儿爱折腾/2024-09-19-RevolverMaps.md
       - Reach/没事儿爱折腾/2024-09-19-vue-in-mkdocs.md
       - Reach/没事儿爱折腾/2024-09-11-deploy-searxng.md
