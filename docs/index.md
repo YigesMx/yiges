@@ -17,14 +17,12 @@ hide:
 
 ## About Me
 
-### 
-
 &emsp;&emsp;:vulcan: &ensp; Hello, I'm Yige Mao\
 &emsp;&emsp;:email:  &ensp; Mail: maoyige@buaa.edu.cn\
 &emsp;&emsp;:school:  &ensp; PhD candidate, BUAA IAI x ZGCA\
 &emsp;&emsp;:material-flask:  &ensp; Embedded Intelligence, CV, Generative AI, etc.
 
-### 主页
+### Homepages
 
 [![GitHub](https://img.shields.io/github/followers/YigesMx?label=GitHub&style=social "GitHub"){style="vertical-align: middle;"}](https://github.com/YigesMx){style="margin: 0px 8px;"} 
 [![Website](https://img.shields.io/badge/yiges.site-%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-green?style=social&logo=markdown "此网站"){style="vertical-align: middle;"}](#){style="margin: 0px 8px;"} 
@@ -45,11 +43,11 @@ hide:
 
 <div markdown>
 
-## 关于本站
+## This Site
 
 这个站点的主要是我个人整理的一些内容和博客分享，将来的 Projects 也会发布在这上面，欢迎大家共同讨论，提出建议，一起交流。
 
-### 构建
+### Build
 
 ![ubuntu](https://img.shields.io/badge/System-Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white)
 ![nginx](https://img.shields.io/badge/Server-Nginx-009639?style=flat&logo=nginx&logoColor=white)
