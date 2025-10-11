@@ -39,7 +39,7 @@ pandoc input.md -o output.pdf
 
 这个命令会将 `input.md` 转换为 `output.pdf`，默认使用 `pdflatex` 作为 pdf 引擎。以下是转换后的效果：
 
-![Simple Usage](https://cloud.yiges.site:5003/i/2024/10/12/670a8e6f920bf.png)
+![Simple Usage](https://cloud.yiges.site:11711/www.yiges.site/2024/10/12/670a8e6f920bf.png)
 
 ## 元数据
 
@@ -55,7 +55,7 @@ date: "Date"
 
 此时转换后就可以得到有标题、作者、日期等元数据页头的 pdf 文件：
 
-![With Meta](https://cloud.yiges.site:5003/i/2024/10/12/670a8ed83c89c.png)
+![With Meta](https://cloud.yiges.site:11711/www.yiges.site/2024/10/12/670a8ed83c89c.png)
 
 ## 中文支持
 
@@ -67,7 +67,7 @@ pandoc input.md -o output.pdf --pdf-engine=xelatex -V mainfont="Songti SC"
 
 这个命令会将 `input.md` 转换为 `output.pdf`，使用 `xelatex` 作为 pdf 引擎，并指定中文字体为 `Songti SC` 即宋体。以下是转换后的效果：
 
-![1728745624057.png](https://cloud.yiges.site:5003/i/2024/10/12/670a909b0a7ab.png)
+![1728745624057.png](https://cloud.yiges.site:11711/www.yiges.site/2024/10/12/670a909b0a7ab.png)
 
 此时运行你会发现，虽然中文可以渲染了，但中文段落并没有正确地进行换行，那么此时推荐使用 `ctex` 宏包，这个宏包可以自动处理中文的断行问题，并且会自动选择中文字体。
 
@@ -94,7 +94,7 @@ pandoc input.md -o output.pdf --pdf-engine=xelatex
 
 此时便可以得到正确的中文排班效果了：
 
-![With Ctex](https://cloud.yiges.site:5003/i/2024/10/12/670a9438ae1cc.png)
+![With Ctex](https://cloud.yiges.site:11711/www.yiges.site/2024/10/12/670a9438ae1cc.png)
 
 此时若要指定字体，可以使用 `mainfont` 和 `CJKmainfont` 参数，例如：
 
@@ -109,7 +109,7 @@ CJKmainfont: "Songti SC"
 
 效果如下：
 
-![With Font Settings](https://cloud.yiges.site:5003/i/2024/10/12/670a950842e73.png)
+![With Font Settings](https://cloud.yiges.site:11711/www.yiges.site/2024/10/12/670a950842e73.png)
 
 ## 调整格式
 
@@ -127,7 +127,7 @@ linestretch: 1.5 # 行间距
 
 示例如下：
 
-![With Style](https://cloud.yiges.site:5003/i/2024/10/12/670a98fe67bf4.png)
+![With Style](https://cloud.yiges.site:11711/www.yiges.site/2024/10/12/670a98fe67bf4.png)
 
 注意其中 fontsize 只有 10pt 11pt 12pt 三种大小可选，如果需要其他大小，可以自己重写模板，并参考 [这篇文章](https://tex.stackexchange.com/questions/634470/document-font-sizes-different-as-10-11-or-12-pt) 来加入额外宏包实现。
 
@@ -168,7 +168,7 @@ pandoc 研究方向.md -o output.pdf --pdf-engine=xelatex --citeproc --csl "/pat
 
 转换后的效果如下：
 
-![1728749002665.png](https://cloud.yiges.site:5003/i/2024/10/13/670a9dcc6071b.png)
+![converted_](https://cloud.yiges.site:11711/www.yiges.site/2024/10/13/670a9dcc6071b.png)
 
 ## 自定义模板
 

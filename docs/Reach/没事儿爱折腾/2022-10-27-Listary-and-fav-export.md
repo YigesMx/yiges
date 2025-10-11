@@ -196,11 +196,11 @@ with open(bookmarksDir+"\Bookmarks",'r', encoding='UTF-8') as bookmarksFile:
 
 其实很简单，就是让 listary 在你上面设置的导出书签目录里搜索就好：
 
-![Listary1](https://cloud.yiges.site:5003/i/2022/10/28/635be7c49f47d.png)
+![Listary1](https://cloud.yiges.site:11711/www.yiges.site/2022/10/28/635be7c49f47d.png)
 
 其中关键字是指，你键入关键字后按空格，则会采用这个过滤器进行针对性搜索：
 
-![Listary2](https://cloud.yiges.site:5003/i/2022/10/28/635be8a94d7ea.gif)
+![Listary2](https://cloud.yiges.site:11711/www.yiges.site/2022/10/28/635be8a94d7ea.gif)
 
 下面对应的目录即是你python脚本中设置的导出目录，而同时勾选目录和文件也方便搜索。
 
@@ -208,7 +208,7 @@ with open(bookmarksDir+"\Bookmarks",'r', encoding='UTF-8') as bookmarksFile:
 
 可以使用 Listary 更便捷得运行你的 python 脚本：
 
-![Listary3](https://cloud.yiges.site:5003/i/2022/10/28/635be9376450c.png)
+![Listary3](https://cloud.yiges.site:11711/www.yiges.site/2022/10/28/635be9376450c.png)
 
 关键字同上用于搜索触发。路径填写python，即运行脚本的命令（要求python在环境变量中，否则填写完整路径）。参数将传递给python，这里填写你自行存储脚本的位置即可。是否给予管理员权限取决于你存储书签目录的位置的权限是否要求管理员。
 

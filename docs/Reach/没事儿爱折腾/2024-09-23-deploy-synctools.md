@@ -13,14 +13,14 @@ tags:
 
 ### Win/Mac 安装与使用
 
-### Linux 安装与使用
+### Docker 安装与使用
 
 ## Syncthing
 
 ### Win/Mac 安装与使用
 
-### Linux 安装与使用
-
 ### Docker 部署
 
 ### 发现服务器和中继服务器
+
+## 写在后面
