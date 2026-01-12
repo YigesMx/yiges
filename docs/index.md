@@ -20,7 +20,7 @@ hide:
 &emsp;&emsp;:vulcan: &ensp; Hello, I'm Yige Mao\
 &emsp;&emsp;:email:  &ensp; Mail: maoyige@buaa.edu.cn\
 &emsp;&emsp;:school:  &ensp; PhD candidate, BUAA IAI x ZGCA\
-&emsp;&emsp;:material-flask:  &ensp; Embedded Intelligence, CV, Generative AI, etc.
+&emsp;&emsp;:material-flask:  &ensp; Embodied Intelligence, CV, Generative AI, etc.
 
 ### Homepages
 
